@@ -2,77 +2,81 @@
 body {
     font-family: Ubuntu Light;
 }
-
+  
 .row {
-    margin: 0px;
+    margin: 0;
 }
-
+  
 .container {
     padding: 70px 0;
 }
-
+  
 p, li {
     color: #444;
     font-size: 14px;
 }
-
-/* Barra de Navegação */
-
+  
+/* Barra de navegação */
 header, .navbar {
-    background-color: #353D41;   
+    background-color: #353D41;
 }
-
-#navbar-container {
+  
+#nav-container {
     padding-top: 0;
     padding-bottom: 0;
 }
-
+  
 #logo {
     width: 75px;
 }
-
+  
 .navbar-brand {
-    padding: 0px;
-    color: white;
+    padding: 0;
+    color: #FFF;
 }
-
+  
 .navbar-brand:hover {
-    color: white;
+    color: #FFF;
 }
-
+  
 #navbar-links a {
-    color: white;
+    color: #FFF;
 }
-.navbar-espand-lg .navbar-nav .navbar-links {
+  
+.navbar-expand-lg .navbar-nav .nav-link {
     padding: 1rem .8rem;
 }
-
+  
+.nav-item.active {
+    border-bottom: 3px solid #FFF;
+}
+  
 /* Slider */
-
+  
 .container-fluid {
-  padding: 0;
+    padding: 0;
 }
-
+  
 #mainSlider .carousel-inner, #mainSlider .carousel-item {
-  height: 90vh;
+    height: 90vh;
 }
-
+  
 #mainSlider .carousel-caption {
-  top: 30%;
+    top: 30%;
 }
-
+  
 #mainSlider .carousel-caption h2 {
-  font-size: 50px;
-  margin-bottom: 30px;
+    font-size: 50px;
+    margin-bottom: 30px;
 }
-
+  
 #mainSlider .carousel-caption p {
-  font-size: 22px;
-  font-weight: 300;
-  margin-bottom: 100px;
-  color: #FFF;
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 100px;
+    color: #FFF;
 }
-
+  
 .main-btn {
     background-color: #65DAF9;
     color: #FFF;
@@ -94,8 +98,7 @@ header, .navbar {
   
 .carousel-indicators .active {
     background-color: #65DAF9;
-  }
-
+}
 /* Institucional*/
 
 #about-area {
