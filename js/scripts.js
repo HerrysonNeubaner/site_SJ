@@ -27,7 +27,7 @@ $(document).ready(function () {
 
         if (btnID == 'ist-menu') {
             scrollTo = aboutSection;
-        } else if (btnID == 'service-menu') {
+        } else if (btnID == 'services-menu') {
             scrollTo = servicesSection;
         } else if (btnID == 'contact-menu') {
             scrollTo = contactSection;
