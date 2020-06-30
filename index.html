@@ -213,34 +213,83 @@
           </div>
         </div>
       </div>
-    </div>
-    <!--Rodapé do site-->
-    <footer>
-      <div id="contact-area">
-        <div class="container">
+      <!--Seção de contatos-->
+      <div id="contact-area" class="contact section-bg">
+        <div class="container" data-aos="fade-up">
           <div class="row">
-            <div class="col-md-12">
-              <h3 class="main-title"> Entre em contato conosco</h3>
+            <div class="col-lg-12">
+              <h3 class="main-title">Entre em contato conosco</h3>
+              <p>A S&J quer colaborar com o seu crescimento. Usaremos todos os nossos anos de experiência para alavancar
+                as suas arrecadações.</p>
+              <p>Não fique de fora da inovação e das soluções mais atuais para a sua causa.</p>
             </div>
-            <div class="col-md-12 contact-box">
-              <i class="fas fa-user"></i>
-              <h4 class="contact-title">Sinei Secco</h4>
-              <p>Diretora Comercial</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="info-box mb-4">
+                <i class="bx bx-map"></i>
+                <h4>Nosso endereço</h4>
+                <p>Rua Lamartine Babo, 481. Londrina, Santa Luzia</p>
+              </div>
             </div>
-            <div class="col-md-6 contact-box">
-              <i class="fas fa-phone-alt"></i>
-              <h4 class="contact-title">Ligue para:</h4>
-              <p>(31)3212-3598 / (31)3072-7419</p>
+            <div class="col-lg-3 col-md-6">
+              <div class="info-box  mb-4">
+                <i class="bx bx-envelope"></i>
+                <h4>Nosso e-mail</h4>
+                <p>comunicação@sjmarketing.com.br</p>
+              </div>
             </div>
-            <div class="col-md-6 contact-box">
-              <i class="fas fa-envelope"></i>
-              <h4 class="contact-title">Envie um e-mail para:</h4>
-              <p>sinei@sjmarketing.com.br</p>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="info-box  mb-4">
+                <i class="bx bx-phone-call"></i>
+                <h4>Telefones</h4>
+                <p>(31)3212-3598 / (31)3072-7419</p>
+              </div>
             </div>
-            <div class="col-md-6" id="msg-box"></div>
+
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="form-row">
+                  <div class="col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome"
+                      data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validate"></div>
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Seu E-mail"
+                      data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validate"></div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto"
+                    data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validate"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required"
+                    data-msg="Please write something for us" placeholder="Sua Mensagem"></textarea>
+                  <div class="validate"></div>
+                </div>
+                <div class="mb-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center"><button type="submit">Enviar Mensagem</button></div>
+              </form>
+            </div>
+
           </div>
         </div>
       </div>
+    </div>
+    <!--Rodapé do site-->
+    <footer>
       <div id="copy-area">
         <div class="container">
           <div class="row">
