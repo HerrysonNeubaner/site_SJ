@@ -28,6 +28,7 @@ header, .navbar {
   
 #logo {
     width: 90px;
+    padding-right: 20px;
 }
   
 .navbar-brand {
@@ -174,7 +175,7 @@ header, .navbar {
     color: #89ca26;
 }
 
-/* Novo Campo Clientes*/
+/* Clientes*/
 
 contact .info-box {
   color: #444444;
@@ -290,35 +291,6 @@ contact .info-box {
 
 .contact .php-email-form button[type="submit"]:hover {
   background:#bbff52;
-}
-
-/* Clientes*/
-
-.clients-box{
-    margin-bottom: 60px;
-}
-
-.clients-box p {
-    font-size: 24px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.clients_logo {
-    margin-bottom: 50px;
-    justify-items: center;
-    align-items: center;
-}
-.img-fluid:hover {
-    opacity: 0.6;
-}
-
-.clients-logo img {
-    max-width: 500px;
-    vertical-align: middle;
-    display: inline-block;
-    border: 0;
-    width: 500px;
 }
 
 /* Divulgação */
