@@ -8,6 +8,12 @@ $(document).ready(function () {
 
     }, 250);
 
+    setTimeout(function () {
+
+        $('#inst-area').parallax({ imageSrc: 'img/pattern.png' });
+
+    }, 250);
+
     // Scrool para Seções
 
     let navBtn = $('.nav-item');
