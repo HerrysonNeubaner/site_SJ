@@ -638,6 +638,11 @@ footer {
 
 /*Timeline*/
 
+#history-area .container{
+  padding-top: 40px;
+}
+
+
 .main-timeline{
   margin: 20px 0;
   position: relative;
@@ -687,7 +692,7 @@ footer {
 }
 .main-timeline .icon:before{
   background: #fff;
-  border: 2px solid #f58634;
+  border: 2px solid #bbff52;
   left: -3px;
 }
 .main-timeline .icon:after{
@@ -720,7 +725,7 @@ footer {
   width: 175px;
   height: 175px;
   font-size: 16px;
-  color: #000;
+  color: #1f1a17;
   text-align: center;
   margin: auto;
   z-index: 1;
@@ -740,7 +745,7 @@ footer {
 }
 .main-timeline .date-outer:before{
   background: #fff;
-  border: 2px solid #f58634;
+  border: 2px solid #bbff52;
   left: -6px;
 }
 .main-timeline .date-outer:after{
@@ -766,7 +771,7 @@ footer {
   display: block;
   font-size: 36px;
   font-weight: 700;
-  color: #111;
+  color: #f58634;
   line-height: 36px;
 }
 
@@ -804,4 +809,48 @@ footer {
 .main-timeline .timeline:nth-child(2n) .timeline-content{
   padding: 20px 50px 20px 0;
   text-align: right;
+}
+
+
+/*Know How*/
+
+.boxes{
+  padding:30px 0px;
+}
+
+.box-part{
+  background:#FFF;
+  border-radius:0;
+  padding:60px 40px;
+  margin:30px 0px;
+  text-align: center;
+}
+.box-part p {
+  margin:20px 0px;
+  font-size: 16px;
+}
+
+.box-part i{
+  color:#89ca26;
+  font-size: 50px;
+  padding-bottom: 30px;
+}
+
+.box-part ul{
+  list-style: none;
+  padding: 5px 0 0 0;
+  margin: 0;
+}
+
+#box-content:hover .box-part{
+  filter:blur(3px);
+  opacity:.5;
+  transform: scale(.98);
+  box-shadow:none;
+}
+#box-content:hover .box-part:hover{
+  transform:scale(1);
+  filter:blur(0px);
+  opacity:1;
+  box-shadow:0 8px 20px 0px rgba(137,202, 38,0.125);
 }
