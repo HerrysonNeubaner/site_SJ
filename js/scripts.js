@@ -23,7 +23,8 @@ $(document).ready(function () {
     let servicesSection = $('#services-area');
     let clientsSection = $('#clients-area');
     let contactSection = $('#contact-area');
-
+    let historySection = $('#history-area');
+    
     let scrollTo = '';
 
     $(navBtn).click(function () {
@@ -40,6 +41,8 @@ $(document).ready(function () {
             scrollTo = clientsSection;
         } else if (btnID == 'contact-menu') {
             scrollTo = contactSection;
+        } else if (btnID == 'icon-inst') {
+            scrollTo = historySection;    
         } else {
             scrollTo = bannerSection
         }
@@ -49,5 +52,5 @@ $(document).ready(function () {
         }, 1500);
 
     });
-    
+
 });

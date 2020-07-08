@@ -593,8 +593,13 @@ footer {
 
 /*========Page Institucional=========*/
 
+#inst-top{
+  width: 100%;
+  height: 110vh;
+}
+
 #inst-area {
-  height: 600px;
+  height: 100%;
 }
 
 #inst-area .container-fluid, #inst-area .row {
@@ -605,6 +610,51 @@ footer {
   text-align: center;
   padding: 70px 50px;
 }
+
+.inst-content{
+  padding-top: 180px;
+}
+
+.inst-content i{
+  padding-top: 150px;
+  font-size: 40px;
+  color: #89ca26;
+
+}
+
+@keyframes icon-inst {
+  0% {
+    transform: translateY(8px);
+  }
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  100% {
+    transform: translateY(8px);
+  }
+}
+@-webkit-keyframes icon-inst-sink {
+  100% {
+    transform: translateY(8px);
+  }
+}
+@keyframes icon-inst-sink {
+  100% {
+    transform: translateY(8px);
+  }
+}
+
+#icon-inst:hover, #icon-inst:focus, #icon-inst:active {
+  animation-name: icon-inst-sink, icon-inst;
+  animation-duration: .3s, 1.5s;
+  animation-delay: 0s, .3s;
+  animation-timing-function: ease-out, ease-in-out;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards;
+  animation-direction: normal, alternate;
+}
+
 
 #company-img {
   background-image: url('../img/empresa.jpg');
@@ -617,14 +667,15 @@ footer {
 }
 
 #inst-pattern-img h4 {
-  font-size: 70px;
+  font-family:'Poiret One', cursive;
+  font-size: 100px;
   margin-top: 8%;
   margin-bottom: 40px;
   text-transform: uppercase;
 }
 
 #inst-pattern-img p {
-  font-size: 20px;
+  font-size: 25px;
   width: 50%;
   text-align: center;
   margin-left: auto;
@@ -639,7 +690,7 @@ footer {
 /*Timeline*/
 
 #history-area .container{
-  padding-top: 40px;
+  padding-top: 80px;
 }
 
 
@@ -812,7 +863,7 @@ footer {
 }
 
 
-/*Know How*/
+/*Missão, Valores e Visão*/
 
 .boxes{
   padding:30px 0px;
@@ -822,8 +873,10 @@ footer {
   background:#FFF;
   border-radius:0;
   padding:60px 40px;
-  margin:30px 0px;
+  margin:20px 0px;
   text-align: center;
+  transition-duration: 0.5s;
+  transition-property: color;
 }
 .box-part p {
   margin:20px 0px;
@@ -842,15 +895,103 @@ footer {
   margin: 0;
 }
 
-#box-content:hover .box-part{
-  filter:blur(3px);
-  opacity:.5;
-  transform: scale(.98);
-  box-shadow:none;
+.box-part li {
+  font-size: 16px;
 }
-#box-content:hover .box-part:hover{
-  transform:scale(1);
-  filter:blur(0px);
-  opacity:1;
-  box-shadow:0 8px 20px 0px rgba(137,202, 38,0.125);
+
+@keyframes box-part {
+  0% {
+    transform: translateY(-8px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
+}
+@-webkit-keyframes box-part-float {
+  100% {
+    transform: translateY(-8px);
+  }
+}
+@keyframes box-part-float {
+  100% {
+    transform: translateY(-8px);
+  }
+}
+
+.box-part:hover, .box-part:focus, .box-part:active {
+  animation-name: box-part-float, box-part;
+  animation-duration: .3s, 1.5s;
+  animation-delay: 0s, .3s;
+  animation-timing-function: ease-out, ease-in-out;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards;
+  animation-direction: normal, alternate;
+}
+  
+
+/*Know How*/
+.know-how {
+  padding-top: 20px;
+  transition-duration: 0.5s;
+}
+.know-how p {
+  text-align: center;
+  font-size: 18px;
+}
+
+.kh-description{
+  transition-duration: 0.3s;
+}
+
+.kh-description:hover, .kh-description:focus, .kh-description:active {
+  transform: scale(1.1);
+}
+
+
+/*Resumo de atividades*/
+
+.business{
+  padding-bottom: 70px;
+}
+
+#about-description, #business-description{
+  list-style: none;
+  padding-left: 0;
+}
+
+#about-description li, #business-description li{
+  line-height: 30px;
+  font-size: 16px;
+  padding-top: 15px;
+}
+
+#about-description i {
+  color: #89ca26;
+  margin-right: 15px;
+}
+
+#business-description {
+  padding-left: 100px;
+}
+
+#business-description i{
+  color: #f58634;
+  margin-right: 15px;
+}
+
+
+.description-list, .business-list{
+  transform-origin: 0 100%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+}
+
+.description-list:hover, .description-list:focus, .description-list:active {
+  transform: scale(1.1);
+}
+.business-list:hover, .business-list:focus, .business-list:active {
+  transform: skew(-10deg);
 }
