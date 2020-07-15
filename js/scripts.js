@@ -14,6 +14,13 @@ $(document).ready(function () {
 
     }, 250);
 
+    setTimeout(function () {
+
+        $('#service-section').parallax({ imageSrc: 'img/pattern-2.png' });
+
+    }, 250);
+
+
     // Scrool para Seções
 
     let navBtn = $('.nav-item');
@@ -24,6 +31,7 @@ $(document).ready(function () {
     let clientsSection = $('#clients-area');
     let contactSection = $('#contact-area');
     let historySection = $('#history-area');
+    let divisionSection = $('#division-area');
     
     let scrollTo = '';
 
@@ -43,6 +51,8 @@ $(document).ready(function () {
             scrollTo = contactSection;
         } else if (btnID == 'icon-inst') {
             scrollTo = historySection;    
+        } else if (btnID == 'icon-div') {
+            scrollTo = divisionSection
         } else {
             scrollTo = bannerSection
         }
