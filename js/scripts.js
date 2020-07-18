@@ -20,6 +20,11 @@ $(document).ready(function () {
 
     }, 250);
 
+    setTimeout(function () {
+
+        $('#software-section').parallax({ imageSrc: 'img/pattern-3.png' });
+
+    }, 250);
 
     // Scrool para Seções
 
@@ -32,7 +37,7 @@ $(document).ready(function () {
     let contactSection = $('#contact-area');
     let historySection = $('#history-area');
     let divisionSection = $('#division-area');
-    
+
     let scrollTo = '';
 
     $(navBtn).click(function () {
@@ -50,7 +55,7 @@ $(document).ready(function () {
         } else if (btnID == 'contact-menu') {
             scrollTo = contactSection;
         } else if (btnID == 'icon-inst') {
-            scrollTo = historySection;    
+            scrollTo = historySection;
         } else if (btnID == 'icon-div') {
             scrollTo = divisionSection
         } else {
@@ -63,4 +68,11 @@ $(document).ready(function () {
 
     });
 
+    $('#serviceCarousel').carousel({
+        interval: 5000
+    
+    });
+
+
 });
+
