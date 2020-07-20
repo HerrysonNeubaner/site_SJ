@@ -1100,7 +1100,12 @@ footer {
   padding-top: 70px;
 }
 
-.tec-img, .cap-img {
+.tec-img{
+  max-width: 100%;
+  height: auto;
+  padding-right: 30px;
+}
+.cap-img {
   max-width: 80%;
   height: auto;
 }
@@ -1258,6 +1263,9 @@ footer {
 }
 
 
+.services-publi{
+  padding-top: 40px;
+}
 .services-publi-title {
   font-family:'Poiret One', cursive;
   padding-top: 30px;
@@ -1278,11 +1286,12 @@ footer {
 
 #carousel-service-area{
   padding-top: 30px;
+  padding-bottom: 160px;
 }
 
 
 #services-carousel{
-  padding-top: 60px;
+  padding-top: 50px;
   padding-bottom: 30px;
   opacity: 0,5;
 }
@@ -1314,6 +1323,16 @@ footer {
 
 }
 
+
+#basic-description h4{
+  font-family:'Poiret One', cursive; 
+  font-size: 30px;
+  color: #f58634;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
 .modules-title{
   padding-top: 70px;
   padding-bottom: 50px;
@@ -1332,6 +1351,13 @@ footer {
   left: 37%;
 }
 
+.modules-subtitle{
+  font-family:'Poiret One', cursive; 
+  font-weight: 26px;
+  color: #89ca26;
+
+}
+
 .module-stf {
   font-family:'Poiret One', cursive;
   padding-top: 70px;
@@ -1340,6 +1366,12 @@ footer {
   margin: 0 0 30px 0;
   font-size: 100px;
   text-align: center
+}
+
+.modules-description p{
+  color: #444;
+  font-size: 18px;
+  padding-top: 20px;
 }
 
 .stf-img {
@@ -1359,7 +1391,7 @@ footer {
 
 #basic-description p{
   font-size: 18px;
-
+  text-align: center;
 }
 
 #basic-description i {
@@ -1377,7 +1409,7 @@ footer {
 }
 
 .stf-detail{
-  padding-bottom: 100px;
+  padding-bottom: 70px;
 }
 
 .stf-basic-list, .management-list{
@@ -1423,4 +1455,47 @@ footer {
   animation-iteration-count: 1, infinite;
   animation-fill-mode: forwards;
   animation-direction: normal, alternate;
+}
+
+/*STF Intermediário e Plus*/
+
+.click-to-call, .record-call{
+  padding-top: 0;
+}
+
+.stf-plus-area{
+  padding-bottom: 40px;
+}
+
+.stf-plus-content{
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.stf-plus-content img{
+  max-width: 120%;
+  padding-right: 100px;
+  padding-top: 100px;
+}
+
+.click-to-call img{
+  max-width: 100%;
+  padding-left: 100px;
+  padding-top: 100px;
+}
+
+.record-call img{
+  max-width: 100%;
+  padding-left: 100px;
+  padding-top: 240px;
+}
+
+.bd-img img{
+  max-width: 90%;
+  padding-left: 100px;
+  padding-top: 30px;
+}
+
+.virtual-operator{
+  padding-top: 50px;
 }
