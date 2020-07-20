@@ -946,25 +946,6 @@ footer {
 }
   
 
-/*Know How*/
-.know-how {
-  padding-top: 20px;
-  transition-duration: 0.5s;
-}
-.know-how p {
-  text-align: center;
-  font-size: 18px;
-}
-
-.kh-description{
-  transition-duration: 0.3s;
-}
-
-.kh-description:hover, .kh-description:focus, .kh-description:active {
-  transform: scale(1.1);
-}
-
-
 /*Resumo de atividades*/
 
 .business{
