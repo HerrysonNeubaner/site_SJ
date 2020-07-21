@@ -1502,3 +1502,28 @@ footer {
 .pabx-virtual-content{
   padding-top: 10px;
 }
+
+/*Home Office*/
+
+.grafic-home{
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.homeOffice-img img{
+  padding-top: 30px;
+  max-width: 80%;
+  padding-left: 20%;
+}
+
+.homeOffice2-img img{
+  max-width: 100%;
+  padding-right: 70px;
+  padding-top: 10px;
+  padding-left: 40px;
+}
+
+.merchan-homeoffice{
+  padding-top:110px;
+  padding-bottom: 0;
+}
