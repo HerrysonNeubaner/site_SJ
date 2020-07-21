@@ -1307,7 +1307,7 @@ footer {
 
 #basic-description h4{
   font-family:'Poiret One', cursive; 
-  font-size: 30px;
+  font-size: 40px;
   color: #f58634;
   text-align: center;
   padding-top: 20px;
@@ -1479,4 +1479,26 @@ footer {
 
 .virtual-operator{
   padding-top: 50px;
+}
+
+/*PABX E Operador Virtual*/
+
+#op-virtual-description{
+  padding-bottom: 0;
+  padding-top: 20;
+}
+
+.op-virtual-img{
+  padding-right: 30px;
+  padding-top: 140px;
+}
+
+.pabx-img{
+  max-width: 150%;
+  padding-bottom: 0;
+  padding-top: 40px;
+}
+
+.pabx-virtual-content{
+  padding-top: 10px;
 }
