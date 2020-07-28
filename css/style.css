@@ -80,14 +80,18 @@ header, .navbar {
 }
   
 #mainSlider .carousel-caption h2 {
-  font-size: 50px;
+  font-family:'Poiret One', cursive;
+  margin: 0 0 30px 0;
+  text-align: center;
+  font-size: 90px;
   margin-bottom: 30px;
 }
   
 #mainSlider .carousel-caption p {
-  font-size: 22px;
-  font-weight: 300;
-  margin-bottom: 100px;
+  font-size: 23px;
+  padding-top: 20px;
+  font-weight: 350;
+  margin-bottom: 80px;
   color: #FFF;
 }
   
@@ -115,10 +119,6 @@ header, .navbar {
 }
 /* Institucional*/
 
-#about-area {
-  background-color: #f9f9f9;
-}
-
 .main-title {
  color: #444;
  margin: 0 0 65px 0;
@@ -136,19 +136,26 @@ header, .navbar {
 }
 
 .about-title{
-  font-size: 17px;
+  font-size: 22px;
   color: #444;
   text-transform: uppercase;
   font-weight: bold;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 #about-list {
   list-style: none;
-  padding-left: 0;
+  padding-left: 30px;
+}
+
+.about-description p {
+  font-size: 18px;
 }
 
 #about-list li {
   line-height: 30px;
+  font-size: 18px;
 }
 
 #about-list i {
@@ -184,11 +191,25 @@ header, .navbar {
   
 }
 
+.about-img{
+  padding-right: 150px;
+}
+
+.about-img img{
+  max-width: 120%;
+  height: auto;
+  padding-top: 110px;
+
+}
+
 .img-fluid:hover {
   opacity: 0.6;
 }
 
 /*Serviços*/
+.service-org{
+  padding-top: 0;
+}
 
 .service-box {
   text-align: center;
@@ -1011,45 +1032,10 @@ footer {
   padding: 0 50px;
 }
 
-@keyframes icon-div {
-  0% {
-    transform: translateY(8px);
-  }
-  50% {
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);
-  }
-  100% {
-    transform: translateY(8px);
-  }
-}
-@-webkit-keyframes icon-div-sink {
-  100% {
-    transform: translateY(8px);
-  }
-}
-@keyframes icon-div-sink {
-  100% {
-    transform: translateY(8px);
-  }
-}
-
-#icon-div:hover, #icon-div:focus, #icon-div:active {
-  animation-name: icon-div-sink, icon-div;
-  animation-duration: .3s, 1.5s;
-  animation-delay: 0s, .3s;
-  animation-timing-function: ease-out, ease-in-out;
-  animation-iteration-count: 1, infinite;
-  animation-fill-mode: forwards;
-  animation-direction: normal, alternate;
-}
-
-
-
 /*Divisões da empresa*/
 
-.division-tec{
-  padding-top: 10px;
+.division-tec-about{
+  padding-top: 20px;
 }
 
 .division-cap{
@@ -1062,7 +1048,7 @@ footer {
 }
 
 .division-title {
- color: #444;
+ color: #444;SS
  margin: 0 0 65px 0;
  font-size: 40px;
  text-align: center;
@@ -1189,16 +1175,18 @@ footer {
 
 /*Geral*/
 
-#software-section {
+#software-section, #outsourcing-section {
   height: 100%;
   height: 60vh;
 }
 
-#software-section .container-fluid, #software-section .row {
+#software-section .container-fluid, #software-section .row, 
+#outsourcing-section .container-fluid, #outsourcing-section .row {
   height: 100%;
 }
 
-#software-section .modules-box {
+
+#software-section .modules-box, #outsourcing-section .modules-box {
   text-align: center;
   padding: 0 50px;
 }
@@ -1218,13 +1206,43 @@ footer {
   color: #89ca26;
 }
 
-#modules-pattern-img h4, #modules-pattern-img p {
+#modules-pattern-img h4, #modules-pattern-img p,
+#modules-outsourcing-img h4, #modules-outsourcing-img p,
+#modules-supervision-img h4, #modules-supervision-img p,
+#call-center-img h4, #call-center-img p {
   color: #FFF;
 }
 
 #modules-pattern-img h4 {
   font-family:'Poiret One', cursive;
   font-size: 70px;
+  margin-top: 8%;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+#modules-supervision-img h4 {
+  font-family:'Poiret One', cursive;
+  padding-top: 40px;
+  font-size: 42px;
+  margin-top: 8%;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+#modules-outsourcing-img h4 {
+  font-family:'Poiret One', cursive;
+  padding-top: 40px;
+  font-size: 70px;
+  margin-top: 8%;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+#call-center-img h4{
+  font-family:'Poiret One', cursive;
+  padding-top: 20px;
+  font-size: 55px;
   margin-top: 8%;
   margin-bottom: 40px;
   text-transform: uppercase;
@@ -1238,8 +1256,34 @@ footer {
   margin-right: auto;
 }
 
+#modules-supervision-img p {
+  font-size: 28px;
+  width: 50%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-#modules-pattern-img {
+#modules-outsourcing-img p {
+  font-size: 24px;
+  width: 50%;
+  padding-top: 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#call-center-img p{
+  font-size: 22px;
+  width: 50%;
+  padding-top: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+#modules-pattern-img, #modules-supervision-img {
   margin-bottom: 20px;
 }
 
@@ -1289,6 +1333,50 @@ footer {
   background-color: #bbff52;
 }
 
+
+.service-navigation {
+  padding-bottom: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+
+
+.service-navigation a {
+  color: #89ca26;
+}
+
+@keyframes service-nav {
+  0% {
+    transform: translateY(8px);
+  }
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  100% {
+    transform: translateY(8px);
+  }
+}
+@-webkit-keyframes service-nav-sink {
+  100% {
+    transform: translateY(8px);
+  }
+}
+@keyframes service-nav-sink {
+  100% {
+    transform: translateY(8px);
+  }
+}
+
+.service-navigation:hover, .service-navigation:focus, .service-navigation:active {
+  animation-name: service-nav-sink, service-nav;
+  animation-duration: .3s, 1.5s;
+  animation-delay: 0s, .3s;
+  animation-timing-function: ease-out, ease-in-out;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards;
+  animation-direction: normal, alternate;
+}
 
 /*STF BÁSICO*/
 
@@ -1406,6 +1494,8 @@ footer {
   transform: skew(-10deg);
 }
 
+
+
 @keyframes stf-img {
   0% {
     transform: translateY(-8px);
@@ -1438,7 +1528,12 @@ footer {
   animation-direction: normal, alternate;
 }
 
-/*STF Intermediário e Plus*/
+
+
+
+/*Call Center*/
+
+
 
 .click-to-call, .record-call{
   padding-top: 0;
@@ -1480,6 +1575,27 @@ footer {
 .virtual-operator{
   padding-top: 50px;
 }
+
+.sac-img img{
+  max-width: 97%;
+  padding-left: 5%;
+  padding-right: 15%;
+  padding-bottom: 60px;
+  padding-top: 0;
+}
+
+#sac-img-detail{
+  padding-top: 30px;
+}
+
+
+.sac2-img img{
+  max-width: 70%;
+  padding-left: 30%;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
 
 /*PABX E Operador Virtual*/
 
@@ -1526,4 +1642,72 @@ footer {
 .merchan-homeoffice{
   padding-top:110px;
   padding-bottom: 0;
+}
+
+/*Terceirizações*/
+
+.module-supervision{
+  font-family:'Poiret One', cursive;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #444;
+  margin: 0 0 30px 0;
+  font-size: 80px;
+  text-align: center
+}
+
+.module-outsourcing{
+  font-family:'Poiret One', cursive;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  color: #444;
+  margin: 0 0 30px 0;
+  font-size: 90px;
+  text-align: center
+}
+
+.cap-img img{
+  padding-top: 70px;
+  max-width: 110%;
+  padding-bottom: 0;
+}
+
+/*========Páginas de contatos=========*/
+
+#contacts-section {
+  height: 100%;
+  height: 70vh;
+}
+
+#contacts-section .container-fluid, #contacts-section .row {
+  height: 100%;
+}
+
+#contacts-section .contacts-box {
+  text-align: center;
+  padding: 0 50px;
+}
+
+.contacts-content{
+  padding-top: 20px;
+}
+
+
+#contacts-pattern-img h4{
+  font-family:'Poiret One', cursive;
+  padding-top: 60px;
+  font-size: 80px;
+  margin-top: 8%;
+  margin-bottom: 45px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#contacts-pattern-img p {
+  font-size: 20px;
+  width: 50%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
 }

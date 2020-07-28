@@ -26,6 +26,19 @@ $(document).ready(function () {
 
     }, 250);
 
+    setTimeout(function () {
+
+        $('#outsourcing-section').parallax({ imageSrc: 'img/pattern-4.png' });
+
+    }, 250);
+
+    setTimeout(function () {
+
+        $('#contacts-section').parallax({ imageSrc: 'img/pattern-5.png' });
+
+    }, 250);
+
+    
     // Scrool para Seções
 
     let navBtn = $('.nav-item');
@@ -36,7 +49,8 @@ $(document).ready(function () {
     let clientsSection = $('#clients-area');
     let contactSection = $('#contact-area');
     let historySection = $('#history-area');
-    let divisionSection = $('#division-area');
+    let divisionSection = $('#division-area')
+    let softwareSection = $('#software-top');
 
     let scrollTo = '';
 
@@ -58,6 +72,8 @@ $(document).ready(function () {
             scrollTo = historySection;
         } else if (btnID == 'icon-div') {
             scrollTo = divisionSection
+        } else if (btnID == 'service-nav') {
+            scrollTo = softwareSection
         } else {
             scrollTo = bannerSection
         }
