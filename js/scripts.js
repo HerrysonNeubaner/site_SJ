@@ -16,7 +16,7 @@ $(document).ready(function () {
 
     setTimeout(function () {
 
-        $('#service-section').parallax({ imageSrc: 'img/pattern-2.png' });
+        $('#service-section').parallax({ imageSrc: 'img/pattern-6.png' });
 
     }, 250);
 
@@ -38,6 +38,11 @@ $(document).ready(function () {
 
     }, 250);
 
+    setTimeout(function () {
+
+        $('#clients-section').parallax({ imageSrc: 'img/pattern-2.png' });
+
+    }, 250);
     
     // Scrool para Seções
 

@@ -76,12 +76,12 @@ header, .navbar {
 }
   
 #mainSlider .carousel-caption {
-  top: 30%;
+  top: 25%;
 }
   
 #mainSlider .carousel-caption h2 {
   font-family:'Poiret One', cursive;
-  margin: 0 0 30px 0;
+  margin: 0 0 0px 0;
   text-align: center;
   font-size: 90px;
   margin-bottom: 30px;
@@ -120,10 +120,11 @@ header, .navbar {
 /* Institucional*/
 
 .main-title {
- color: #444;
- margin: 0 0 65px 0;
- font-size: 40px;
- text-align: center;
+  font-family:'Poiret One', cursive;
+  color: #444;
+  margin: 0 0 65px 0;
+  font-size: 40px;
+  text-align: center;
 }
 
 .main-title::after {
@@ -174,21 +175,23 @@ header, .navbar {
   background-color: #89ca26;
   color: #FFF;
   text-transform: uppercase;
-  width: 200px;
-  height: 70px;
-  padding: 10px 20px;
-  border-radius: 30px;
+  width: 255px;
+  height: 67px;
+  padding: 20px 20px;
+  padding-left: 22px;
+  border-radius: 40px;
   border: 3px solid transparent;
-  transition: .5s;
+  transition-duration: 0.2s;
   text-align: center;
+  transition-property: box-shadow, transform;
 }
   
-.inst-btn:hover {
+.inst-btn:hover, .inst-btn:focus, .inst-btn:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
   text-decoration: none;
-  color: #444;
-  background-color: transparent;
-  border-color: #bbff52;
-  
+  color: #FFF;
 }
 
 .about-img{
@@ -1048,10 +1051,11 @@ footer {
 }
 
 .division-title {
- color: #444;SS
+ color: #444;
  margin: 0 0 65px 0;
  font-size: 40px;
  text-align: center;
+
 }
  
 .division-title::after {
@@ -1682,6 +1686,23 @@ footer {
 #contacts-section .container-fluid, #contacts-section .row {
   height: 100%;
 }
+#contacts-section {
+  height: 100%;
+  height: 70vh;
+}
+
+#contacts-section .container-fluid, #contacts-section .row {
+  height: 100%;
+}
+
+#contacts-section .contacts-box {
+  text-align: center;
+  padding: 0 50px;
+}
+
+.contacts-content{
+  padding-top: 20px;
+}
 
 #contacts-section .contacts-box {
   text-align: center;
@@ -1710,4 +1731,100 @@ footer {
   margin-left: auto;
   margin-right: auto;
   color: #fff;
+}
+
+
+/*========Páginas de clientes=========*/
+
+#clients-section {
+  height: 100%;
+  height: 70vh;
+}
+
+#clients-section .container-fluid, #clients-section .row {
+  height: 100%;
+}
+
+#clients-section .client-box {
+  text-align: center;
+  padding: 0 50px;
+}
+
+.clients-content{
+  padding-top: 20px;
+}
+
+#clients-pattern-img h4{
+  font-family:'Poiret One', cursive;
+  padding-top: 60px;
+  font-size: 100px;
+  margin-top: 8%;
+  margin-bottom: 45px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#clients-pattern-img p {
+  font-size: 26px;
+  width: 50%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+
+.clients-title h2{
+  font-family:'Poiret One', cursive;
+  padding-top: 70px;
+  padding-bottom: 30px;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #1f1a17;
+  text-align: center;
+}
+
+.clients-title p{
+
+  padding-top: 30px;
+  padding-bottom: 70px;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #89ca26;
+  text-align: center;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 70%;
+  opacity: 0;
+  transition: .5s ease;
+  border-radius: 50px;
+  background-color: #fff;
+  transition-property: transform;
+}
+
+
+
+.fade-text:hover .overlay {
+  opacity: 1;
+  transform: scale(1.1);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+.text {
+  color: #89ca26;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
