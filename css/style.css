@@ -2497,6 +2497,72 @@ footer {
     margin-top: 50px;
   }
 
+  /*========Serviços/Divisões=========*/
+
+  /* Geral */
+
+
+  #software-section, #outsourcing-section {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .modules-content{
+    margin-top: 75px;
+  }
+
+  #modules-pattern-img h4 {
+    margin-top: 250px;
+    font-size: 45px;
+    width: 100%;
+  }
+
+  #modules-pattern-img p {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  
+  #basic-description p {
+    font-size: 18px;
+    margin: 0 15px;
+  }
+
+  .modules-title{
+    font-size: 30px;
+  }
+
+  #basic-description li, #management-description li {
+    font-size: 18px;
+    padding-left: 10px;
+    width: 100%;
+  }
+
+  #management-description{
+    padding-left: 20px;
+  }
+
+  /* STF Básico */
+
+  .module-stf {
+    font-size: 80px;
+  }
+
+  .stf-detail .modules-title {
+    font-size: 30px;
+    font-weight: 550;
+  }
+
+  .stf-img{
+    max-width: 90%;
+    padding: 20px 10px 50px 60px;
+  }
+
+  .services-publi-title{
+    font-size: 40px;
+  }
+
+
 
   /* Contatos */
   #contact-area{
@@ -2688,6 +2754,59 @@ footer {
     margin-top: 100px;
   }
 
+  /*========Serviços/Divisões=========*/
+
+  /* Geral */
+
+
+  #software-section, #outsourcing-section {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .modules-content{
+    margin-top: 75px;
+    padding-top: 160px;
+  }
+
+  #modules-pattern-img h4 {
+    font-size: 70px;
+    width: 100%;
+  }
+
+  #modules-pattern-img p {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  
+  #basic-description p {
+    font-size: 18px;
+    margin: 0 15px;
+  }
+
+  #basic-description li, #management-description li {
+    font-size: 18px;
+    padding-left: 40px;
+    width: 100%;
+  }
+
+  #management-description{
+    padding-left: 80px;
+  }
+
+  /* STF Básico */
+
+
+  .stf-img{
+    max-width: 80%;
+    padding: 20px 10px 50px 60px;
+  }
+
+  .services-publi-title{
+    font-size: 40px;
+  }
+
   /* Contatos */
   #contact-area{
     padding-bottom: 40px;
@@ -2811,6 +2930,26 @@ footer {
 
   .inst-content i {
     padding-top: 60px;
+  }
+
+  /*========Serviços/Divisões=========*/
+
+  /* Geral */
+
+
+  #software-section, #outsourcing-section {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .modules-content{
+    margin-top: 75px;
+    padding-top: 150px;
+  }
+
+  #modules-pattern-img p {
+    font-size: 25px;
+    width: 70%; 
   }
 
   /* Contatos */
