@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>SJ Gestão em Comunicação</title>
+    <title>Captação de Doações</title>
     <link rel="sortcut icon" href="img/logo.ico" type="image/x-icon" />
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -23,198 +22,181 @@
     <script src="https://kit.fontawesome.com/fbcf13c442.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300&display=swap" rel="stylesheet">
     <!--Parallax-->
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 </head>
-
 <body>
     <script src="js/scripts.js"></script>
+    <script src="js/fixed.js"></script>
+    <script src="js/wa_btn.js"></script>
     <!--Cabeçalho do site-->
     <header>
-        <!-- Menu de navegação-->
         <div class="container" id="nav-container">
-            <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+            <!-- Menu de navegação-->
+            <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
                 <a href="index.html" class="navbar-brand">
-                    <img id="logo" src="img/logo.png" alt="SJ Gestão em Comunicação"> S&J Gestão em Comunicação
+                    <img id="logo" src="img/logo.png" alt="SJ Gestão em Comunicação">
+                    <p id="navbar-name">S&J Gestão em Comunicação</p>
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
-                    aria-controls="navbar-links" aria-expanded="false" aria-label="toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
-                    <div class="navbar-nav">
-                        <a href="index.html" class="nav-item nav-link" id="sj-menu">A SJ</a></u>
-                        <a href="institucional.html" class="nav-item nav-link" id="ist-menu">Institucional</a></u>
-                        <a href="services.html" class="nav-item nav-link" id="services-menu">Serviços</a></u>
-                        <a href="clients.html" class="nav-item nav-link" id="clients-menu">Clientes</a></u>
-                        <a href="contact.html" class="nav-item nav-link" id="contact-menu">Contatos</a></u>
+                <!-- Seção do menu -->
+                <div class="menu-section collapse navbar-collapse justify-content-end" id="menuRes">
+                    <div id="navbar-links">
+                        <div class="navbar-nav">
+                            <a href="index.html" class="nav-item nav-link">Inicio</a></u>
+                            <a href="institucional.html" class="nav-item nav-link">Institucional</a></u>
+                            <a href="services.html" id="service_resp" class="nav-item nav-link">Serviços</a></u>
+                            <!-- Menu de serviços -->
+                            <div class="btn-group dropleft">
+                                <a class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Serviços
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <p class="dropdown-title"> Divisão Tecnológica</p>
+                                    <a class="dropdown-item" href="stf.html"><i class="fas fa-circle-notch"></i>  Sistema de Telemarketing Filantrópico</a>
+                                    <a class="dropdown-item" href="sga.html"><i class="fas fa-circle-notch"></i>  Sistema de Gestão Assistencial</a>
+                                    <a class="dropdown-item" href="sac.html"><i class="fas fa-circle-notch"></i>  Sistema de Atendimento ao Cliente 2.0</a>
+                                    <a class="dropdown-item" href="pabx.html"><i class="fas fa-circle-notch"></i>  Operador e PABX Virtual</a>
+                                    <a class="dropdown-item" href="homeOffice.html"><i class="fas fa-circle-notch"></i>  Home Office</a>
+                                    <p class="dropdown-title"> Divisão de Captação</p>
+                                    <a class="dropdown-item" href="capDonations.html"><i class="fas fa-circle-notch"></i> Terceirização da Captação de Doações</a>
+                                    <a class="dropdown-item" href="supervision.html"><i class="fas fa-circle-notch"></i>  Coordenação do Setor de Captação</a>
+                                </div>
+                            </div> <!-- Fim do menu de serviços -->
+                            <a href="contact.html" id="contact_resp" class="nav-item nav-link">Contato</a></u>
+                        </div>
                     </div>
+                    <!-- Design do menu responsivo -->
+                    <div class="menu-toggle">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="tree"></div>
+                    </div>                
                 </div>
-            </nav>
+            </nav> 
+            <!-- Fim do Menu de navegação -->
         </div>
     </header>
     <!--Fim do menu-->
-
     <!--Corpo do Site-->
     <main>
-        <div class="container-fluid">
-            
+        <div id="parallax_area"class="container-fluid">
             <!--Seção de introdução-->
             <div class="main-image" id="software-top">
-                    <div id="outsourcing-section">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-12 modules-box" id="modules-outsourcing-img">
-                                    <div class="modules-content">
-                                        <h4>Terceirização da captação de doaçoes</h4>
-                                        <p>Desenvolvemos projetos personalizados de acordo com a necessidade da instituição.</p> 
-                                    </div>
+                <div id="outsourcing-section">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 modules-box" id="modules-outsourcing-img">
+                                <!-- Apresentação -->
+                                <div class="modules-content">
+                                    <h4 class="icon-way-services">Terceirização da captação de doaçoes</h4>
+                                    <p>Desenvolvemos projetos personalizados de acordo com a necessidade da instituição.
+                                    </p>
+                                    <a class="nav-item nav-link" id="icon-cap"><i
+                                        class="fas fa-angle-double-down"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
             </div>
             <!--Fim da Seção-->
-            
+            <!--Guia de páginas-->
+            <div id="guide-cap">
+                <ul>
+                    <li class="active"><a href="#">Terceirização da captação de doaçoes</a></li>
+                    <li><a href="services.html#cap_service_area">Divisão de Captação</a></li>
+                    <li><a href="services.html#services-area"><i class="fa fa-home"></i>Serviços</a></li>
+                </ul>
+            </div>
+            <!-- Botão Whatsapp -->
+            <div id="wa_btn">
+                <a  class="whatsapp-link" href="https://api.whatsapp.com/send?phone=553130727419O&text=Ol%C3%A1%2C+quero+saber+mais+sobre+a+Terceiriza%C3%A7%C3%A3o+da+Capta%C3%A7%C3%A3o+das+Doa%C3%A7%C3%B5es." target="_blank">
+                    <i class="fa fa-whatsapp"></i>
+                </a>
+            </div>
+            <!-- Fim do botão -->
             <section class="capDonations">
                 <!--Seção Terceirização da Equipe de Captação-->
                 <div>
-                    <div class="container">
+                    <div class="container" id="fix-guide">
                         <div class="row">
+                            <!-- Descrição do serviço -->
                             <div id="basic-description" class="com-md-12">
-                                <h2 class="module-outsourcing">Projeto de Terceirização do Setor de telemarketing</h2>
-                                <p>O projeto de captação de recursos financeiros através do sistema de telemarketing é nossa especialidade. Essa ferramenta oferece  uma estrutura de terceirização em HOME OFFICE, ou seja, uma política de trabalho remoto que proporciona grande produtividade em um cenário de custo reduzido.</p>
+                                <h2 id="wa_btn_start" class="module-outsourcing">Terceirização do Setor de telemarketing</h2>
+                                <p>O projeto de captação de recursos financeiros através do sistema de telemarketing é
+                                    nossa especialidade. Essa ferramenta oferece uma estrutura de terceirização em HOME
+                                    OFFICE, ou seja, uma política de trabalho remoto que proporciona grande
+                                    produtividade em um cenário de custo reduzido.</p>
                             </div>
                             <!--.Imagem Ilustrativa da Seção-->
-                            <div class="col-md-12 cap-img">
+                            <div class="col-md-12 TerCap-img">
                                 <img class="stf-img" src="img/cap3.png" alt="terceirização da captação">
                             </div>
-                        </div><!--.row-->
-                    </div><!--.container-->
+                        </div>
+                        <!--.row-->
+                    </div>
+                    <!--.container-->
                 </div>
                 <!--Fim da Seção-->
-                
+                <!-- Descrição do serviço -->
                 <div id="capDonations-area">
                     <div class="container">
                         <div class="row">
-
                             <!--Serviços oferecidos-->
-                            
                             <div class="col-md-12" id="basic-description">
                                 <h2 class="modules-title">Porque Terceirizar?</h2>
-                                <h4>O processo de terceirização é um método muito utilizado que oferece grandes benefícios como:</h4>
+                                <h4 id="wa_btn_end">O processo de terceirização é um método muito utilizado que oferece grandes
+                                    benefícios como:</h4>
                             </div>
-
+                            <!-- Listagem dos benefícios -->
                             <div class="col-md-12 business-content">
-                                
                                 <ul id="basic-description">
-                                    <li class="stf-basic-list"><i class="fas fa-check"></i><b>Comodidade</b> – A entidade se preocupa em gerir apenas o seu negócio.</li>
-                                    <li class="stf-basic-list"><i class="fas fa-check"></i><b>Segurança</b>– a doação vai ser recebida por vias automáticas sem passar por mãos de pessoas evitando o risco com extravios.</li>
-                                    <li class="stf-basic-list"><i class="fas fa-check"></i><b>Gestão de pessoas</b>– Questões  administrativas e trabalhista que geram custos e são dispendiosas serão eliminadas.</li>
-                                    <li class="stf-basic-list"><i class="fas fa-check"></i><b>Qualidade nos serviços/produtividade</b>– acompanhamento  diário da S&J, que tem a expertise em captação.</li>
-                                    <li class="stf-basic-list"><i class="fas fa-check"></i><b>Menor custo</b>– O custo operacional diminui consideravelmente e o custo de infraestrutura e investimento com equipamentos e por conta da S&J.</li>
+                                    <li class="stf-basic-list"><i class="fas fa-check"></i><b>Comodidade</b> – A
+                                        entidade se preocupa em gerir apenas o seu negócio.
+                                    </li>
+                                    <li class="stf-basic-list"><i class="fas fa-check"></i><b>Segurança</b>– a doação
+                                        vai ser recebida por vias automáticas sem passar por mãos de pessoas evitando o
+                                        risco com extravios.
+                                    </li>
+                                    <li class="stf-basic-list"><i class="fas fa-check"></i><b>Gestão de pessoas</b>–
+                                        Questões administrativas e trabalhista que geram custos e são dispendiosas serão
+                                        eliminadas.
+                                    </li>
+                                    <li class="stf-basic-list"><i class="fas fa-check"></i><b>Qualidade nos
+                                            serviços/produtividade</b>– acompanhamento diário da S&J, que tem a
+                                        expertise em captação.
+                                    </li>
+                                    <li class="stf-basic-list"><i class="fas fa-check"></i><b>Menor custo</b>– O custo
+                                        operacional diminui consideravelmente e o custo de infraestrutura e investimento
+                                        com equipamentos e por conta da S&J.
+                                    </li>
+                                </ul>
                             </div>
-                            <!--Fim da seção-->
-                            
+                            <!--Fim da listagem de benefícios-->
                             <!--.Chamativo-->
                             <div class="col-md-12 merchan-homeoffice">
                                 <ul id="basic-description">
-                                    <h4>Nos contate que apresentaremos uma proposta que atenderá a demanda de captação de doações de sua instituição</h4>
+                                    <h4>Nos contate que apresentaremos uma proposta que atenderá a demanda de captação
+                                        de doações de sua instituição</h4>
                                 </ul>
                             </div>
-
-                        </div><!--.row-->
-                    </div><!--.container-->
-                </div>
-            </section>
-
-
-            <!--carrossel de serviços-->
-            <section>
-                <div class="services-publi">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h2 class="services-publi-title">Conheça todos os nossos serviços</h2>
-                            </div>
                         </div>
+                        <!--.row-->
                     </div>
+                    <!--.container-->
                 </div>
-                <!--carrossel de serviços-->
-                <div class="container" id="carousel-service-area">
-                    <div class="row blog">
-                        <div class="col-md-12">
-                            <div id="serviceCarousel" class="carousel slide" data-ride="carousel">
-        
-                                <ol class="carousel-indicators services-button">
-                                    <li data-target="#serviceCarousel" data-slide-to="0" class="active"></li>
-                                    <li data-target="#serviceCarousel" data-slide-to="1"></li>
-                                </ol>
-        
-                                <!-- Carousel items -->
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <div class="row">
-                                            <div class="col-md-4 service-box" id="services-carousel">
-                                                <a href="software-soluction.html">
-                                                <i class="fas fa-comments-dollar"></i>
-                                                <h4>Solução em Software para captação de doações</h4>
-                                                </a>
-                                            </div>
-                                            <div class="col-md-4 service-box" id="services-carousel">
-                                                <a href="callcenter.html">
-                                                <i class="fas fa-headset"></i>
-                                                <h4>Solução em Software para Call Center Ativo e Receptivo</h4>
-                                                </a>
-                                            </div>
-                                            <div class="col-md-4 service-box" id="services-carousel">
-                                                <a href="pabx.html">
-                                                <i class="fas fa-phone-volume"></i>
-                                                <h4>Operador e PABX Virtual</h4>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <!--.row-->
-                                    </div>
-                                    <!--.item-->
-        
-                                    <div class="carousel-item">
-                                        <div class="row">
-                                            <div class="col-md-4 service-box" id="services-carousel">
-                                                <a href="homeOffice.html">
-                                                <i class="fas fa-laptop-house"></i>
-                                                <h4>Gestão em Home Office</h4>
-                                                </a>
-                                            </div>
-                                            <div class="col-md-4 service-box" id="services-carousel">
-                                                <a href="capDonations.html">
-                                                <i class="fas fa-hand-holding-usd"></i>
-                                                <h4>Terceirização da Captação de Doações</h4>
-                                                </a>
-                                            </div>
-                                            <div class="col-md-4 service-box" id="services-carousel">
-                                                <a href="supervision.html">
-                                                <i class="fas fa-users"></i>
-                                                <h4>Terceirização da Supervisão da Captação de doações</h4>
-                                                </a>
-                                            </div>
-                                        <!--.row-->
-                                        </div>
-                                    </div><!--.item-->
-        
-                                </div>
-                                <!--.carousel-inner-->
-                            </div>
-                            <!--.Carousel-->
-        
-                        </div>
-                    </div>
-                </div>
+                <!-- Fim da descrição do serviço -->
             </section>
-
         </div>
-
+        <!--Direcionamento WhatsApp-->
+        <div class="col-12 inst-link">
+            <a href="https://api.whatsapp.com/send?phone=553130727419O&text=Ol%C3%A1%2C+quero+saber+mais+sobre+a+Terceiriza%C3%A7%C3%A3o+da+Capta%C3%A7%C3%A3o+das+Doa%C3%A7%C3%B5es."><i class="fab fa-whatsapp whatsapp-btn">Entre em contato conosco</i></a>
+        </div>
+        <!-- Fim do direcionamento -->
         <!--Navegação para o top do site-->
         <div class="container-fluid">
             <div class="container">
@@ -226,55 +208,55 @@
             </div>
         </div>
         <!--Fim do contéudo-->
-
         <!--Rodapé do site-->
         <footer id="footer">
             <div class="footer-top">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-4 footer-info">
-                            <h3>S&J</h3>
-                            <h4>Gestão em Comunicação</h4>
-                            <p>Desde 1998 nascemos para ajudar você. Empresa mineira especializada em soluções para
-                                Call
-                                Center
-                                receptivo e ativo e com KNOW HOW em captação de doações para o terceiro setor.</p>
-                        </div>
-                        <div class="col-md-4 footer-links">
+                        <!-- Resumo da SJ -->
+                        <div class="col-md-4 col-12 footer-info">
+                            <h4>S&J - Gestão em Comunicação</h4>
+                            <p>Desde 1998 nascemos para ajudar você. Empresa mineira especializada em soluções para Call Center
+                            receptivo e ativo e com KNOW HOW em captação de doações para o terceiro setor.</p>
+                        </div><!-- Fim do resumo -->
+                        <!-- Links para as páginas -->
+                        <div class="col-md-4 col-12 footer-links">
                             <h4>Links</h4>
                             <ul>
-                                <li><a href="index.html" class="footer-item">A SJ</a></li>
+                                <li><a href="#mainSlider" class="footer-item">A SJ</a></li>
                                 <li><a href="institucional.html" class="footer-item">Institucional</a></li>
                                 <li><a href="services.html" class="footer-item">Serviços</a></li>
-                                <li><a href="clients.html" class="footer-item">Clientes</a></li>
                                 <li><a href="contact.html" class="footer-item">Contatos</a></li>
+                                <li><a href="blog.html" class="footer-item">Blog</a></li>
                             </ul>
                         </div>
-                        <div class="col-md-4 footer-contact">
+                        <!--Fim dos links das páginas-->
+                        <!-- Resumo de contatos -->
+                        <div class="col-md-4 col-12 footer-contact">
                             <h4>Contatos</h4>
                             <p>
-                                Rua Lamartine Babo,481<br>
-                                Londrina, Santa Luzia<br>
-                                <strong>Telefone:</strong> (31)3212-3598 / (31)3072-7419<br>
-                                <strong>Email:</strong> comunicação@sjmarketing.com.br<br>
+                                Escritório em Santa Luzia e Itapecerica<br>
+                                <strong>Telefone:</strong> (31)3072-7419/ (31)3212-3598<br>
+                                <strong>Email:</strong> comercial@sjgestao.com.br<br>
                             </p>
                             <div class="social-links">
-                                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-                                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.instagram.com/sjgestao" class="instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="https://api.whatsapp.com/send?phone=553130727419O&text=Ol%C3%A1%2C+quero+saber+mais+sobre+a+S%26J+e+seus+servi%C3%A7os%21" class="linkedin"><i class="fa fa-whatsapp"></i></a>
                             </div>
                         </div>
-                    </div>
+                        <!--Fim dos contatos-->
+                    <div>
+                <!--.row-->
                 </div>
+            <!--.container-->
             </div>
+            <!-- Seção de copyright-->
             <div class="container" id="copy-area">
                 <div class="copyright">
-                    <p><strong>S&J Gestão em Comunicação</strong> &copy; 2020</p>
+                <p><strong>S&J Gestão em Comunicação</strong> &copy; 2022</p>
                 </div>
             </div>
-        </footer><!-- Fim do rodapé -->
+        </footer><!-- End Footer -->
     </main>
 </body>
-
 </html>

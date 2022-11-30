@@ -5,12 +5,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>SJ Gestão em Comunicação</title>
+    <title>Institucional</title>
     <link rel="sortcut icon" href="img/logo.ico" type="image/x-icon" />
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!--Scripts-->
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -23,56 +24,83 @@
     <script src="https://kit.fontawesome.com/fbcf13c442.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300&display=swap" rel="stylesheet">
     <!--Parallax-->
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 </head>
 
 <body>
     <script src="js/scripts.js"></script>
+    <script src="js/wa_btn.js"></script>
 
     <!--Cabeçalho do site-->
     <header>
         <div class="container" id="nav-container">
             <!-- Menu de navegação-->
-            <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+            <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
                 <a href="index.html" class="navbar-brand">
                     <img id="logo" src="img/logo.png" alt="SJ Gestão em Comunicação">
-                    <p>S&J Gestão em Comunicação</p>
+                    <p id="navbar-name">SJ Gestão em Comunicação</p>
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
-                    aria-controls="navbar-links" aria-expanded="false" aria-label="toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
-                    <div class="navbar-nav">
-                        <a href="index.html" class="nav-item nav-link" id="sj-menu">A SJ</a></u>
-                        <a href="#inst-top" class="nav-item nav-link" id="ist-menu">Institucional</a></u>
-                        <a href="services.html" class="nav-item nav-link" id="services-menu">Serviços</a></u>
-                        <a href="clients.html" class="nav-item nav-link" id="clients-menu">Clientes</a></u>
-                        <a href="contact.html" class="nav-item nav-link" id="contact-menu">Contatos</a></u>
+                <!-- Seção do menu -->
+                <div class="menu-section collapse navbar-collapse justify-content-end" id="menuRes">
+                    <div id="navbar-links">
+                        <div class="navbar-nav">
+                            <a href="index.html" class="nav-item nav-link">Inicio</a></u>
+                            <a href="institucional.html" class="nav-item nav-link">Institucional</a></u>
+                            <a href="services.html" id="service_resp" class="nav-item nav-link">Serviços</a></u>
+                            <!-- Menu de serviços -->
+                            <div class="btn-group dropleft">
+                                <a class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Serviços
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <p class="dropdown-title"> Divisão Tecnológica</p>
+                                    <a class="dropdown-item" href="stf.html"><i class="fas fa-circle-notch"></i>  Sistema de Telemarketing Filantrópico</a>
+                                    <a class="dropdown-item" href="sga.html"><i class="fas fa-circle-notch"></i>  Sistema de Gestão Assistencial</a>
+                                    <a class="dropdown-item" href="sac.html"><i class="fas fa-circle-notch"></i>  Sistema de Atendimento ao Cliente 2.0</a>
+                                    <a class="dropdown-item" href="pabx.html"><i class="fas fa-circle-notch"></i>  Operador e PABX Virtual</a>
+                                    <a class="dropdown-item" href="homeOffice.html"><i class="fas fa-circle-notch"></i>  Home Office</a>
+                                    <p class="dropdown-title"> Divisão de Captação</p>
+                                    <a class="dropdown-item" href="capDonations.html"><i class="fas fa-circle-notch"></i> Terceirização da Captação de Doações</a>
+                                    <a class="dropdown-item" href="supervision.html"><i class="fas fa-circle-notch"></i>  Coordenação do Setor de Captação</a>
+                                </div>
+                            </div> <!-- Fim do menu de serviços -->
+                            <a href="contact.html" id="contact_resp" class="nav-item nav-link">Contato</a></u>
+                        </div>
                     </div>
+                    <!-- Design do menu responsivo -->
+                    <div class="menu-toggle">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="tree"></div>
+                    </div>                
                 </div>
-            </nav>
+            </nav> 
+            <!-- Fim do Menu de navegação -->
         </div>
     </header>
 
     <!--Corpo da Página-->
     <main>
-        <div class="container-fluid">
-
-            <!--Seção de introdução-->
+        <!--Seção de introdução-->
+        <div id="parallax_area" class="container-fluid">
             <div class="main-image" id="inst-top">
                 <div id="inst-area">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12 inst-box" id="inst-pattern-img">
                                 <div class="inst-content">
+                                    <!-- Apresentação -->
                                     <h4>Nossa História</h4>
-                                    <p>A S&J Gestão em Comunicação, nasceu com a missão ser um facilitador do
-                                        crescimento e sustentabilidade de ações filantrópicas sérias, comprometidas com
-                                        a melhoria de
-                                        condições de vida e cidadania da população.</p>
+                                    <p>A SJ Gestão em Comunicação nasceu com a missão ser um facilitador na
+                                        comunicação, unindo a população com causas
+                                        filantrópicas. Comprometida com a melhoria constante nessa área, inovamos e
+                                        temos um leque de soluções para Ong's e empresas
+                                        privadas também no que tange facilidades de comunicar–se com eficiência.</p>
                                     <a class="nav-item nav-link" id="icon-inst"><i
                                             class="fas fa-angle-double-down"></i></a>
                                 </div>
@@ -81,68 +109,126 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <!-- Fim da seção de introdução -->
+
+        <!-- Botão Whatsapp -->
+        <div id="wa_btn">
+            <a  class="whatsapp-link" href="https://api.whatsapp.com/send?phone=553130727419O&text=Ol%C3%A1%2C+quero+saber+mais+sobre+a+S%26J+e+seus+servi%C3%A7os%21" target="_blank">
+                <i class="fa fa-whatsapp"></i>
+            </a>
+        </div>
+        <!-- Fim do botão whatsapp -->
+
+        <!-- Desenvolvimento da SJ -->
+        <div class="container-fluid" id="body-bg">
             <!--Seção da história da SJ-->
+            <div id="basic-description" class="com-md-12">
+                <h2 id="wa_btn_start" class="timeline-title">Nosso Desenvolvimento</h2>
+            </div>
+            <!--Seção de Timeline -->
             <div class="history" id="history-area">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
+                            <!-- Linha do Tempo -->
                             <div class="main-timeline">
+                                <!-- 2021 -->
                                 <div class="timeline">
                                     <div class="icon"></div>
-                                    <div class="date-content-in">
+                                    <div class="date-content y-2021">
                                         <div class="date-outer">
                                             <span class="date">
-                                                <span class="year">1998</span>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="timeline-content-in">
-                                        <p class="description">
-                                            Iniciamos, atendendo as entidades filantrópicas oferecendo nosso trabalho
-                                            através da assessoria. Montávamos o setor de captação através do
-                                            telemarketing, oferecendo um software para gerenciamento do setor, além de
-                                            visitas presencias de nossos representantes.
-                                            Atuamos assim por um período de 14 anos, e atendemos cerca de 58 entidades
-                                            filantrópicas nesse formato que abrangeu mais de 100 cidades no estado de
-                                            Minas Gerais.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="timeline">
-                                    <div class="icon"></div>
-                                    <div class="date-content">
-                                        <div class="date-outer">
-                                            <span class="date">
-                                                <span class="year">2005</span>
+                                                <span class="year">2021</span>
                                             </span>
                                         </div>
                                     </div>
                                     <div class="timeline-content">
                                         <p class="description-2">
-                                            Iniciamos também além da assessoria, um novo produto, o aluguel do nosso
-                                            software STF (sistema de telemaketing filantrópico).
+                                            Criação dos Sistema de Gestão Assistencial (SGA), um serviço dedicado ao controle e gestão total 
+                                            dos registros relacionados aos assistidos das instituições. Com o foco no acompanhamento e evolução de cada cadastro,
+                                            visando um processo ágil entre os setores participantes no cuidado de cada assistido registrado.
+                                        </p>
+                                        <p>                                            
+                                            Foi também neste ano que inovamos nossas soluções com o STF. Após novos aprimoramentos, comecializamos os atuais módulos: STF START e STF PREMIUM.
                                         </p>
                                     </div>
                                 </div>
+                                <!-- 2020 -->
                                 <div class="timeline">
                                     <div class="icon"></div>
-                                    <div class="date-content">
+                                    <div class="date-content y-2020 dateAccert">
                                         <div class="date-outer">
                                             <span class="date">
-                                                <span class="year">2011</span>
+                                                <span class="year">2020</span>
                                             </span>
                                         </div>
                                     </div>
                                     <div class="timeline-content">
                                         <p class="description-2">
-                                            Entra para a sociedade, um novo integrante,que foi funcionário da empresa
-                                            por 10 anos, na área de T.I..
+                                            Nesse ano atípico com o COVID 19, a SJ estava preparada para esse
+                                            enfrentamento, pois desde 2018, já trabalhava na
+                                            terceirização e vendia tecnologia para o modelo home office, o que comprova
+                                            que a SJ é uma empresa afrente do seu
+                                            tempo.
                                         </p>
                                     </div>
                                 </div>
+                                <!-- 2019 -->
                                 <div class="timeline">
                                     <div class="icon"></div>
-                                    <div class="date-content">
+                                    <div class="date-content y-2019">
+                                        <div class="date-outer">
+                                            <span class="date">
+                                                <span class="year">2019</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <p class="description-2">
+                                            A S&J Marketing passa ser SJ - Gestão em Comunicação, mudança necessária
+                                            para acompanhar a evolução e ampliação de nossa MISSÃO.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- 2018 -->
+                                <div class="timeline">
+                                    <div class="icon"></div>
+                                    <div class="date-content y-2018">
+                                        <div class="date-outer">
+                                            <span class="date">
+                                                <span class="year">2018</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <p class="description-2">
+                                            Iniciamos a TERCEIRIZAÇÃO HOME OFFICE, um novo projeto ousado, um sucesso! E
+                                            lançamento de NOVO PRODUTO: SAC 2.0 – Gestão de Atendimento.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- 2006 -->
+                                <div class="timeline">
+                                    <div class="icon"></div>
+                                    <div class="date-content y-2016">
+                                        <div class="date-outer">
+                                            <span class="date">
+                                                <span class="year">2016</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <p class="description-2">
+                                            Foi criado novos produtos: mais um modulo do STF, o STF PLUS; a Operadora
+                                            Virtual; e o PABX virtual.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- 2012 -->
+                                <div class="timeline">
+                                    <div class="icon"></div>
+                                    <div class="date-content y-2012">
                                         <div class="date-outer">
                                             <span class="date">
                                                 <span class="year">2012</span>
@@ -158,199 +244,166 @@
                                         </p>
                                     </div>
                                 </div>
+                                <!-- 2011 -->
                                 <div class="timeline">
                                     <div class="icon"></div>
-                                    <div class="date-content">
+                                    <div class="date-content y-2011">
                                         <div class="date-outer">
                                             <span class="date">
-                                                <span class="year">2016</span>
+                                                <span class="year">2011</span>
                                             </span>
                                         </div>
                                     </div>
                                     <div class="timeline-content">
                                         <p class="description-2">
-                                            Foi criado novos produtos: mais um modulo do STF, o STF PLUS; a Operadora
-                                            Virtual; e o PABX virtual.
+                                            Entra para a sociedade, um novo integrante,que foi funcionário da empresa
+                                            por 10 anos, na área de T.I..
                                         </p>
                                     </div>
                                 </div>
+                                <!-- 2005 -->
                                 <div class="timeline">
                                     <div class="icon"></div>
-                                    <div class="date-content">
+                                    <div class="date-content y-2005">
                                         <div class="date-outer">
                                             <span class="date">
-                                                <span class="year">2018</span>
+                                                <span class="year">2005</span>
                                             </span>
                                         </div>
                                     </div>
                                     <div class="timeline-content">
                                         <p class="description-2">
-                                            Iniciamos a TERCEIRIZAÇÃO HOME OFFICE, um novo projeto ousado, um sucesso! E
-                                            lançamento de NOVO PRODUTO: SAC 2.0 – Gestão de Atendimento.
+                                            Com os conhecimentos adquiridos nas relações com as entidades, criamos nossa própria solução para a gestão do telemaketing
+                                            filantrópico, o software STF (Sistema de Telemaketing Filantrópico). Onde diversas ONG's iniciaram a locação do sistema,
+                                            além de nossa acessoria. 
                                         </p>
                                     </div>
                                 </div>
+                                <!-- 1998 -->
                                 <div class="timeline">
                                     <div class="icon"></div>
-                                    <div class="date-content">
+                                    <div class="date-content y-1998 dateAccert">
                                         <div class="date-outer">
                                             <span class="date">
-                                                <span class="year">2019</span>
+                                                <span class="year">1998</span>
                                             </span>
                                         </div>
                                     </div>
                                     <div class="timeline-content">
-                                        <p class="description-2">
-                                            A S&J Marketing passa ser S&J - Gestão em Comunicação, mudança necessária
-                                            para acompanhar a evolução e ampliação de nossa MISSÃO.
+                                        <p class="description">
+                                            Iniciamos, atendendo as entidades filantrópicas oferecendo nosso trabalho
+                                            através da assessoria. Montávamos o setor de captação através do
+                                            telemarketing, oferecendo um software terceirizado para gerenciamento do setor, além de
+                                            visitas presencias de nossos representantes.
+                                            Atuamos assim por um período de 14 anos, e atendemos cerca de 58 entidades
+                                            filantrópicas nesse formato que abrangeu mais de 100 cidades no estado de
+                                            Minas Gerais.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- Fim da linha do tempo -->
                     </div>
                 </div>
+                <!-- FIm do container -->
             </div>
-            <!--Seção descritiva da empresa-->
-            <div class="mvv">
-                <!--Seção principios da empresa-->
-                <div class="boxes">
-                    <div class="container">
-                        <div class="row" id="box-content">
-                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"">
-                                <div class=" box-part">
+            <!-- Fim da seção de timeline -->
+        </div>
+        <!-- Fim da área de desenvolvimento -->
+        <!--Seção descritiva da empresa-->
+        <div class="container-fluid mvv">
+            <!-- Agrupamento dos príncipios da empresa -->
+            <div class="boxes">
+                <div class="container">
+                    <div class="row" id="box-content">
+                        <!-- Missão -->
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"">
+                            <div class=" box-part">
                                 <i class="fas fa-hands-helping" aria-hidden="true"></i>
                                 <h2>Missão</h2>
-                                <p>Inovar sempre para que nossos clientestenham à disposição as melhores soluções
-                                    para gerirem o seu negócio comsegurança, melhor desempenho ecredibilidade.</p>
-                                <p>Ser um facilitador do crescimento deações filantrópicas sérias, comprometidas
-                                    com a melhoria de condições de vida ecidadania da população.</p>
+                                <p>Inovar sempre para que nossos clientes tenham à disposição as melhores soluções para gerirem o seu negócio com segurança, melhor desempenho e credibilidade.</p>
+                                <p>Ser um facilitador do crescimento de ações filantrópicas sérias, comprometidas com a melhoria de condições de vida e cidadania da população.</p>
                             </div>
                         </div>
+                        <!-- Visão -->
                         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"">
-                                <div class=" box-part">
-                            <i class="far fa-eye" aria-hidden="true"></i>
-                            <h2>Visão</h2>
-                            <p>Ser referência de qualidade e inovação no mercado de atuação, buscando as
-                                melhores soluções para que nossos clientes obtenham os melhores resultados e contiem
-                                prestando
-                                serviços de caráter ético.
-                            </p>
+                            <div class=" box-part">
+                                <i class="far fa-eye" aria-hidden="true"></i>
+                                <h2>Visão</h2>
+                                <p>Ser referência de qualidade e inovação no mercado de atuação, buscando as melhores soluções para que nossos clientes obtenham os melhores resultados e continuem prestando serviços de caráter ético.</p>
+                            </div>
+                        </div>
+                        <!-- Valores -->
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"">
+                            <div class=" box-part">
+                                <i class="fas fa-balance-scale" aria-hidden="true"></i>
+                                <h2 id="wa_btn_end">Valores</h2>
+                                <ul>
+                                    <li>Inovação</li>
+                                    <li>Desenvolvimento contínuo</li>
+                                    <li>Reconhecimento</li>
+                                    <li>Confiança</li>
+                                    <li>Respeito</li>
+                                    <li>comprometimento</li>
+                                    <li>Transparência</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"">
-                                <div class=" box-part">
-                        <i class="fas fa-balance-scale" aria-hidden="true"></i>
-                        <h2>Valores</h2>
-                        <ul>
-                            <li>Inovação</li>
-                            <li>Desenvolvimento contínuo</li>
-                            <li>Reconhecimento</li>
-                            <li>Confiança</li>
-                            <li>Respeito</li>
-                            <li>comprometimento</li>
-                            <li>Transparência</li>
-                        </ul>
-                    </div>
                 </div>
             </div>
+            <!-- Fim do agrupamento -->
         </div>
-        </div>
-
-        <!--Seção com resumo de atividades-->
-
-        <div class="business" id="business-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 business-content">
-
-                        <ul id="about-description">
-                            <h2 class="main-title">S&J Gestão em Comunicação</h2>
-                            <li class="description-list"><i class="fas fa-check"></i>Oferecemos soluções completas, que
-                                trazem excelentes
-                                resultados a seus clientes, consolidando a comodidade, a produtividade e a segurança;
-                            </li>
-                            <li class="description-list"><i class="fas fa-check"></i>Nossa equipe é especializada e
-                                equipada com ferramentas de
-                                última geração;</li>
-                            <li class="description-list"><i class="fas fa-check"></i>Temos como compromisso em atender
-                                oferecendo soluções e
-                                atendimento personalizado de qualidade, precisão e pontualidade;</li>
-                            <li class="description-list"><i class="fas fa-check"></i>Tenha à sua disposição o mais
-                                completo e eficaz
-                                acompanhamento e planejamento estratégico para o seu negócio, promovendo ações de
-                                qualidade que vão atender e estimular todas as demandas do seu setor nas áreas de:</li>
-                        </ul>
-
-                        <ul id="business-description">
-                            <li class="business-list"><i class="fas fa-circle-notch"></i>Estruturação e planejamento
-                                para captação de doações;</li>
-                            <li class="business-list"><i class="fas fa-circle-notch"></i>Softwares de gestão de captação
-                                de doações</li>
-                            <li class="business-list"><i class="fas fa-circle-notch"></i>Software para gestão de
-                                atendimento SAC</li>
-                            <li class="business-list"><i class="fas fa-circle-notch"></i>Soluções para telefonia PABX IP
-                                e operadora eletrônica</li>
-                            <li class="business-list"><i class="fas fa-circle-notch"></i>Gestão em Home Office</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        </div>
-
-        </div>
-
+        <!-- Fim da seção descritiva da empresa -->
         <!--Footer-->
         <footer id="footer">
             <div class="footer-top">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-4 footer-info">
-                            <h3>S&J</h3>
-                            <h4>Gestão em Comunicação</h4>
-                            <p>Desde 1998 nascemos para ajudar você. Empresa mineira especializada em soluções para
-                                Call
-                                Center
-                                receptivo e ativo e com KNOW HOW em captação de doações para o terceiro setor.</p>
-                        </div>
-                        <div class="col-md-4 footer-links">
+                        <!-- Resumo da SJ -->
+                        <div class="col-md-4 col-12 footer-info">
+                            <h4>SJ - Gestão em Comunicação</h4>
+                            <p>Desde 1998 nascemos para ajudar você. Empresa mineira especializada em soluções para Call Center
+                            receptivo e ativo e com KNOW HOW em captação de doações para o terceiro setor.</p>
+                        </div><!-- Fim do resumo -->
+                        <!-- Links para as páginas -->
+                        <div class="col-md-4 col-12 footer-links">
                             <h4>Links</h4>
                             <ul>
-                                <li><a href="index.html" class="footer-item">A SJ</a></li>
+                                <li><a href="#mainSlider" class="footer-item">A SJ</a></li>
                                 <li><a href="institucional.html" class="footer-item">Institucional</a></li>
                                 <li><a href="services.html" class="footer-item">Serviços</a></li>
-                                <li><a href="clients.html" class="footer-item">Clientes</a></li>
                                 <li><a href="contact.html" class="footer-item">Contatos</a></li>
+                                <li><a href="blog.html" class="footer-item">Blog</a></li>
                             </ul>
                         </div>
-                        <div class="col-md-4 footer-contact">
+                        <!--Fim dos links das páginas-->
+                        <!-- Resumo de contatos -->
+                        <div class="col-md-4 col-12 footer-contact">
                             <h4>Contatos</h4>
                             <p>
-                                Rua Lamartine Babo,481<br>
-                                Londrina, Santa Luzia<br>
-                                <strong>Telefone:</strong> (31)3212-3598 / (31)3072-7419<br>
-                                <strong>Email:</strong> comunicação@sjmarketing.com.br<br>
+                                Escritório em Santa Luzia e Itapecerica<br>
+                                <strong>Telefone:</strong> (31)3072-7419/ (31)3212-3598<br>
+                                <strong>Email:</strong> comercial@sjgestao.com.br<br>
                             </p>
                             <div class="social-links">
-                                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-                                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.instagram.com/sjgestao" class="instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="https://api.whatsapp.com/send?phone=553130727419O&text=Ol%C3%A1%2C+quero+saber+mais+sobre+a+S%26J+e+seus+servi%C3%A7os%21" class="linkedin"><i class="fa fa-whatsapp"></i></a>
                             </div>
                         </div>
+                        <!--Fim dos contatos-->
                     </div>
+                <!--.row-->
                 </div>
+            <!--.container-->
             </div>
+            <!-- Seção de copyright-->
             <div class="container" id="copy-area">
                 <div class="copyright">
-                    <p><strong>S&J Gestão em Comunicação</strong> &copy; 2020</p>
+                    <p><strong>SJ Gestão em Comunicação</strong> &copy; 2022</p>
                 </div>
             </div>
         </footer><!-- End Footer -->
-
     </main>
-
-
 </body>

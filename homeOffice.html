@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>SJ Gestão em Comunicação</title>
-    <link rel="sortcut icon" href="img/logo.ico" type="image/x-icon" />;
+    <title>Gestão em Home Office</title>
+    <link rel="sortcut icon" href="img/logo.ico" type="image/x-icon" />
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -23,271 +22,282 @@
     <script src="https://kit.fontawesome.com/fbcf13c442.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300&display=swap" rel="stylesheet">
     <!--Parallax-->
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 </head>
-
 <body>
     <script src="js/scripts.js"></script>
+    <script src="js/fixed.js"></script>
+    <script src="js/wa_btn.js"></script>
     <!--Cabeçalho do site-->
     <header>
-        <!-- Menu de navegação-->
         <div class="container" id="nav-container">
-            <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+            <!-- Menu de navegação-->
+            <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
                 <a href="index.html" class="navbar-brand">
-                    <img id="logo" src="img/logo.png" alt="SJ Gestão em Comunicação"> S&J Gestão em Comunicação
+                    <img id="logo" src="img/logo.png" alt="SJ Gestão em Comunicação">
+                    <p id="navbar-name">SJ Gestão em Comunicação</p>
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
-                    aria-controls="navbar-links" aria-expanded="false" aria-label="toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
-                    <div class="navbar-nav">
-                        <a href="index.html" class="nav-item nav-link" id="sj-menu">A SJ</a></u>
-                        <a href="institucional.html" class="nav-item nav-link" id="ist-menu">Institucional</a></u>
-                        <a href="services.html" class="nav-item nav-link" id="services-menu">Serviços</a></u>
-                        <a href="clients.html" class="nav-item nav-link" id="clients-menu">Clientes</a></u>
-                        <a href="contact.html" class="nav-item nav-link" id="contact-menu">Contatos</a></u>
+                <!-- Seção do menu -->
+                <div class="menu-section collapse navbar-collapse justify-content-end" id="menuRes">
+                    <div id="navbar-links">
+                        <div class="navbar-nav">
+                            <a href="index.html" class="nav-item nav-link">Inicio</a></u>
+                            <a href="institucional.html" class="nav-item nav-link">Institucional</a></u>
+                            <a href="services.html" id="service_resp" class="nav-item nav-link">Serviços</a></u>
+                            <!-- Menu de serviços -->
+                            <div class="btn-group dropleft">
+                                <a class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Serviços
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <p class="dropdown-title"> Divisão Tecnológica</p>
+                                    <a class="dropdown-item" href="stf.html"><i class="fas fa-circle-notch"></i>  Sistema de Telemarketing Filantrópico</a>
+                                    <a class="dropdown-item" href="sga.html"><i class="fas fa-circle-notch"></i>  Sistema de Gestão Assistencial</a>
+                                    <a class="dropdown-item" href="sac.html"><i class="fas fa-circle-notch"></i>  Sistema de Atendimento ao Cliente 2.0</a>
+                                    <a class="dropdown-item" href="pabx.html"><i class="fas fa-circle-notch"></i>  Operador e PABX Virtual</a>
+                                    <a class="dropdown-item" href="homeOffice.html"><i class="fas fa-circle-notch"></i>  Home Office</a>
+                                    <p class="dropdown-title"> Divisão de Captação</p>
+                                    <a class="dropdown-item" href="capDonations.html"><i class="fas fa-circle-notch"></i> Terceirização da Captação de Doações</a>
+                                    <a class="dropdown-item" href="supervision.html"><i class="fas fa-circle-notch"></i>  Coordenação do Setor de Captação</a>
+                                </div>
+                            </div> <!-- Fim do menu de serviços -->
+                            <a href="contact.html" id="contact_resp" class="nav-item nav-link">Contato</a></u>
+                        </div>
                     </div>
+                    <!-- Design do menu responsivo -->
+                    <div class="menu-toggle">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="tree"></div>
+                    </div>                
                 </div>
-            </nav>
+            </nav> 
+            <!-- Fim do Menu de navegação -->
         </div>
     </header>
     <!--Fim do menu-->
-
-    <!--Corpo do Site-->
-    <main>
-        <div class="container-fluid">
-            <!--Seção de introdução-->
+    <main><!--Corpo do Site-->
+        <!--Seção de introdução-->
+        <div id="parallax_area" class="container-fluid">
             <div class="main-image" id="software-top">
                 <div id="software-section">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12 modules-box" id="modules-pattern-img">
+                                <!-- Apresentação -->
                                 <div class="modules-content">
-                                    <h4>Gestão em Home Office</h4>
-                                    <p>Se quer inovar e aumentar a produtividade de sua equipe com menor custo, sabemos como fazer – vamos conversa?</p> 
+                                    <h4>Home Office</h4>
+                                    <p>Se quer inovar e aumentar a produtividade de sua equipe com menor custo, sabemos
+                                        como fazer – vamos conversa?</p>
+                                    <a href="#wa_btn_start" class="nav-item nav-link" id="icon-home-office"><i
+                                    class="fas fa-angle-double-down"></i></a>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </div> <!--.row-->
+                    </div><!--.Container-->
                 </div>
             </div>
-            <!--Fim da Seção-->
-            
+        </div><!--Fim da Seção-->
+        <!--Guia de páginas-->
+        <div id="guide">
+            <ul>
+                <li class="active"><a href="#">Home Office</a></li>
+                <li><a href="services.html#tec_service_area">Divisão Tecnológica</a></li>
+                <li><a href="services.html#services-area"><i class="fa fa-home"></i>Serviços</a></li>
+            </ul>
+        </div><!--Fim do guia de páginas-->
+        <!-- Botão de direcionamento Whatsapp -->
+        <div id="wa_btn">
+            <a  class="whatsapp-link" href="https://api.whatsapp.com/send?phone=553130727419O&text=Ol%C3%A1%2C+quero+saber+mais+sobre+a+Gest%C3%A3o+em+Home+Office." target="_blank">
+                <i class="fa fa-whatsapp"></i>
+            </a>
+        </div>
+        <!-- Fim do direcionamento -->
+        <!--Seção descritiva do serviço-->
+        <div class="container-fluid" id="fix-guide">
             <!--Seção de Gestão de HomeOffice-->
-            <section id="homeOffice"> 
+            <section id="homeOffice">
+                <!-- Introdução -->
                 <div class="homeOffice">
                     <div class="container">
                         <div class="row">
+                            <!-- Descrição inicial -->
                             <div id="basic-description" class="com-md-12">
-                                <h2 class="module-stf">Gestão em Home Office</h2>
-                                <p>A S&J com sua experiência pode criar todas as condições necessária, com tecnologia de ponta e Know How para que o setor de telemarketig  da sua INSTITUIÇÃO ou EMPRESA hoje físico, se transforme em uma estrutura Home Office, o que oferecemos é a tecnologia e expertise.</p>
+                                <h2 id="wa_btn_start" class="module-home-office">Home Office</h2>
+                                <p>A SJ com sua experiência pode criar todas as condições necessária, com tecnologia de
+                                    ponta e Know How para que o setor de telemarketig da sua INSTITUIÇÃO ou EMPRESA hoje
+                                    físico, se transforme em uma estrutura Home Office, o que oferecemos é a tecnologia
+                                    e expertise.</p>
                             </div>
                         </div><!--.row-->
                     </div><!--.container-->
-                </div>
-                <!--Fim da Seção-->
-                
-                <!--Descrição do serviço-->
+                </div><!--Fim da Intodução-->
+                <!--seção de benefícios-->
                 <div id="homeOffice-area">
                     <div class="container">
                         <div class="row">
-
                             <!--Benefícios-->
-                            
                             <div class="col-md-12" id="basic-description">
                                 <h2 class="modules-title">Benefícios do Home Office</h2>
                             </div>
                             <div class="col-md-12 business-content">
                                 <ul id="basic-description">
-                                    <li class="stf-basic-list"><i class="fas fa-check"></i>1 - Diminuição de custos com:</li>
+                                    <li class="stf-basic-list"><i class="fas fa-check"></i>1 - Diminuição de custos com:
+                                    </li>
                                 </ul>
                                 <ul id="management-description">
                                     <li class="management-list"><i class="fas fa-circle-notch"></i>Vale transporte</li>
                                     <li class="management-list"><i class="fas fa-circle-notch"></i>Vale refeição</li>
-                                    <li class="management-list"><i class="fas fa-circle-notch"></i>Aluguel de imóvel</li>
-                                    <li class="management-list"><i class="fas fa-circle-notch"></i>Matérias de uso para o setor funcionar, limpeza, água, luz etc</li>
+                                    <li class="management-list"><i class="fas fa-circle-notch"></i>Aluguel de imóvel
+                                    </li>
+                                    <li class="management-list"><i class="fas fa-circle-notch"></i>Matérias de uso para
+                                        o setor funcionar, limpeza, água, luz etc</li>
                                 </ul>
                                 <ul id="basic-description">
-                                    <li class="stf-basic-list"><i class="fas fa-check"></i>2 - Qualidade de vida do funcionário</li>
+                                    <li class="stf-basic-list"><i class="fas fa-check"></i>2 - Qualidade de vida do
+                                        funcionário</li>
                                 </ul>
                                 <ul id="management-description">
-                                    <li class="management-list"><i class="fas fa-circle-notch"></i><b>Evita desgastes com trânsito</b>, como tempo gastos com as distâncias e meios de transporte ineficientes.</li>
-                                    <li class="management-list"><i class="fas fa-circle-notch"></i><b>Oferece segurança</b>, não saindo de casa, evitam-se, acidentes de trabalho no trânsito, bem como em caso de chuvas forte ou outros fenômenos da natureza.  </li>
-                                    <li class="management-list"><i class="fas fa-circle-notch"></i><b>Oferece comodidade:</b> principalmente para as mulheres que tem jornadas duplas, estar em casa ajuda muito resolver problemas domésticos de fácil resolução bem como estar perto dos filhos e poder supervisionar os mesmos. </li>
+                                    <li class="management-list"><i class="fas fa-circle-notch"></i><b>Evita desgastes
+                                            com trânsito</b>, como tempo gastos com as distâncias e meios de transporte
+                                        ineficientes.</li>
+                                    <li class="management-list"><i class="fas fa-circle-notch"></i><b>Oferece
+                                            segurança</b>, não saindo de casa, evitam-se, acidentes de trabalho no
+                                        trânsito, bem como em caso de chuvas forte ou outros fenômenos da natureza.
+                                    </li>
+                                    <li class="management-list"><i class="fas fa-circle-notch"></i><b>Oferece
+                                            comodidade:</b> principalmente para as mulheres que tem jornadas duplas,
+                                        estar em casa ajuda muito resolver problemas domésticos de fácil resolução bem
+                                        como estar perto dos filhos e poder supervisionar os mesmos. </li>
                                 </ul>
                                 <ul id="basic-description">
-                                    <li class="stf-basic-list"><i class="fas fa-check"></i>3 - Outros benefícios gerais</li>
+                                    <li class="stf-basic-list"><i class="fas fa-check"></i>3 - Outros benefícios gerais
+                                    </li>
                                 </ul>
                                 <ul id="management-description">
-                                    <li class="management-list"><i class="fas fa-circle-notch"></i><b>Aumento de produtividade do colaborador</b> terá maior concentração, não terá várias pessoas falando, o que pode dispersar a atenção, bem como alguém fazendo um comentário negativo e desmotivando o grupo todo. </li>
-                                    <li class="management-list"><i class="fas fa-circle-notch"></i><b>Redução de estresse</b>,o desgaste de energia com locomoção até o trabalho poderá ser usado na produtividade, hoje no método tradicional muitas vezes o colaborador já chega estressado/cansado.</li>
-                                    <li class="management-list"><i class="fas fa-circle-notch"></i><b>Reduz o absenteísmo</b>, o qual pode ser observado  pelo conjunto de motivos já expostos.</li>
-                                    <li class="management-list"><i class="fas fa-circle-notch"></i><b>Acidente de trabalho nulo</b>, por deslocamento, o que quando ocorre causa desgaste para a empresa.</li>
-                                    <li class="management-list"><i class="fas fa-circle-notch"></i><b>Oferece flexibilidade de horário</b>, para trabalhar, pois cada uma está na sua casa, se for necessário podem ter horários diferentes.</li>
+                                    <li class="management-list"><i class="fas fa-circle-notch"></i><b>Aumento de
+                                            produtividade do colaborador</b> terá maior concentração, não terá várias
+                                        pessoas falando, o que pode dispersar a atenção, bem como alguém fazendo um
+                                        comentário negativo e desmotivando o grupo todo. </li>
+                                    <li class="management-list"><i class="fas fa-circle-notch"></i><b>Redução de
+                                            estresse</b>,o desgaste de energia com locomoção até o trabalho poderá ser
+                                        usado na produtividade, hoje no método tradicional muitas vezes o colaborador já
+                                        chega estressado/cansado.</li>
+                                    <li class="management-list"><i class="fas fa-circle-notch"></i><b>Reduz o
+                                            absenteísmo</b>, o qual pode ser observado pelo conjunto de motivos já
+                                        expostos.</li>
+                                    <li class="management-list"><i class="fas fa-circle-notch"></i><b>Acidente de
+                                            trabalho nulo</b>, por deslocamento, o que quando ocorre causa desgaste para
+                                        a empresa.</li>
+                                    <li class="management-list"><i class="fas fa-circle-notch"></i><b>Oferece
+                                            flexibilidade de horário</b>, para trabalhar, pois cada uma está na sua
+                                        casa, se for necessário podem ter horários diferentes.</li>
                                 </ul>
                             </div>
                             <!--Fim da seção de benefícios-->
-
-
                             <!--.Título da Seção-->
                             <div class="col-md-12" id="basic-description">
                                 <h2 class="modules-title">Serviços oferecidos:</h2>
                             </div>
-
                             <!--.Imagem ilustrativa da Seção-->
                             <div class="col-md-12 homeOffice-img">
                                 <img class="stf-img" src="img/homeoffice.png" alt="Home Office">
                             </div>
-
-
                             <!--.Descriçao dos serviços oferecidos-->
-                            <div class="col-md-12 business-content">
+                            <div id="wa_btn_end" class="col-md-12 business-content">
                                 <ul id="basic-description">
-                                    <li class="stf-basic-list"><i class="fas fa-check"></i><b>Oferecemos hospedagem e tecnologia de virtualização:</b> para que seja possível ter uma rede de trabalho no sistema home office, que compreende:</li>
+                                    <li class="stf-basic-list"><i class="fas fa-check"></i><b>Oferecemos hospedagem e
+                                            tecnologia de virtualização:</b> para que seja possível ter uma rede de
+                                        trabalho no sistema home office, que compreende:
+                                    </li>
                                 </ul>
                                 <ul id="management-description">
-                                    <li class="management-list"><i class="fas fa-circle-notch"></i>Sistema de alta disponibilidade.</li>
-                                    <li class="management-list"><i class="fas fa-circle-notch"></i>Sistemas interligados, com softwares que se  comunicam entre sí.</li>
-                                    <li class="management-list"><i class="fas fa-circle-notch"></i>Recursos de PABX IP.</li>
+                                    <li class="management-list"><i class="fas fa-circle-notch"></i>
+                                        Sistema de alta disponibilidade.
+                                    </li>
+                                    <li class="management-list"><i class="fas fa-circle-notch"></i>
+                                        Sistemas interligados, com softwares que se comunicam entre sí.
+                                    </li>
+                                    <li class="management-list"><i class="fas fa-circle-notch"></i>
+                                        Recursos de PABX IP.
+                                    </li>
                                 </ul>
                                 <ul id="basic-description">
-                                    <li class="stf-basic-list"><i class="fas fa-check"></i><b>Oferecemos Gestão de banco de dados:</b> que compreende no backup de todo sistema e registro de gravações, com total segurança.</li>
+                                    <li class="stf-basic-list"><i class="fas fa-check"></i><b>Oferecemos Gestão de banco
+                                            de dados:</b> que compreende no backup de todo sistema e registro de
+                                        gravações, com total segurança.</li>
                                 </ul>
                                 <ul id="basic-description">
-                                    <li class="stf-basic-list"><i class="fas fa-check"></i>Oferecemos tecnologia em software para supervisão do serviço online/remota, como:</li>
+                                    <li class="stf-basic-list"><i class="fas fa-check"></i>Oferecemos tecnologia em
+                                        software para supervisão do serviço online/remota, como:</li>
                                 </ul>
                                 <ul id="management-description">
-                                    <li class="management-list"><i class="fas fa-circle-notch"></i>Painel de controle e visualização da telefonia IP.</li>
-                                    <li class="management-list"><i class="fas fa-circle-notch"></i>Dispositivo de controle para acompanhamento das atividades operacionais, como o inicio e término da carga horária de trabalho. É possível saber também se as pausa  e normas  da NR 17 estão sendo respeitadas.</li>
-                                    <li class="management-list"><i class="fas fa-circle-notch"></i>Controle de acesso no trabalho, o qual pode ser limitado dentro do horário pré determinado, para que não trabalhem em horário não autorizados.</li>
-                                    <li class="management-list"><i class="fas fa-circle-notch"></i>Plataforma de chamados e comunicação para contatos entre funcionários e supervisão.</li>
+                                    <li class="management-list"><i class="fas fa-circle-notch"></i>Painel de controle e
+                                        visualização da telefonia IP.</li>
+                                    <li class="management-list"><i class="fas fa-circle-notch"></i>Dispositivo de
+                                        controle para acompanhamento das atividades operacionais, como o inicio e
+                                        término da carga horária de trabalho. É possível saber também se as pausa e
+                                        normas da NR 17 estão sendo respeitadas.</li>
+                                    <li class="management-list"><i class="fas fa-circle-notch"></i>Controle de acesso no
+                                        trabalho, o qual pode ser limitado dentro do horário pré determinado, para que
+                                        não trabalhem em horário não autorizados.</li>
+                                    <li class="management-list"><i class="fas fa-circle-notch"></i>Plataforma de
+                                        chamados e comunicação para contatos entre funcionários e supervisão.</li>
                                 </ul>
                             </div>
-
-
                             <!--Repartição com imagem ilustrativa-->
                             <div class="container grafic-home">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <ul id="basic-description">
-                                            <li class="stf-basic-list"><i class="fas fa-check"></i><b>Oferecemos orientações sobre o home office:</b> no que tange o acompanhamento e adaptação do sistema junto aos operadores e supervisor. Nessas orientações oferecemos apoio também para se proceder no âmbito trabalhista do novo sistema.</li>
+                                            <li class="stf-basic-list"><i class="fas fa-check"></i><b>Oferecemos
+                                                    orientações sobre o home office:</b> no que tange o acompanhamento e
+                                                adaptação do sistema junto aos operadores e supervisor. Nessas
+                                                orientações oferecemos apoio também para se proceder no âmbito
+                                                trabalhista do novo sistema.</li>
                                         </ul>
                                         <ul id="basic-description">
-                                            <li class="stf-basic-list"><i class="fas fa-check"></i><b>Suporte técnico,</b> que compreende a operacionalização de todos os computadores que estão em atividade neste modelo. Assegurando a eficiência de cada ponto, solucionando problemas que possam vir a impedirem a execução do sistema e das tarefas. </li>
+                                            <li class="stf-basic-list"><i class="fas fa-check"></i><b>Suporte
+                                                    técnico,</b> que compreende a operacionalização de todos os
+                                                computadores que estão em atividade neste modelo. Assegurando a
+                                                eficiência de cada ponto, solucionando problemas que possam vir a
+                                                impedirem a execução do sistema e das tarefas. </li>
                                         </ul>
                                     </div>
-
                                     <!--.Imagem Ilustrativa do Home Office-->
                                     <div class="col-md-6 homeOffice2-img">
                                         <img class="stf-img" src="img/homeoffice2.png" alt="Home Office">
                                     </div>
-
-
                                     <!--.Chamativo-->
                                     <div class="col-md-12 merchan-homeoffice">
                                         <ul id="basic-description">
-                                            <h4>Se quer inovar e aumentar a produtividade de sua equipe com menor custo, Sabemos como fazer – vamos conversa?</h4>
+                                            <h4>Se quer inovar e aumentar a produtividade de sua equipe com menor custo,
+                                                Sabemos como fazer – vamos conversa?</h4>
                                         </ul>
                                     </div>
-                                </div><!--.Row-->
-                            </div><!--.container-->
-
-                            <!--Fim da Seção-->
-                        </div><!--.row-->
-                    </div><!--.container-->
-                </div>
-                <!--Fim da Seção-->
-
-            </section>
-            
-            <!--Carousel de serviços oferecidos-->
-            <section>
-                <div class="services-publi">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h2 class="services-publi-title">Conheça todos os nossos serviços</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--carrossel de serviços-->
-                <div class="container" id="carousel-service-area">
-                    <div class="row blog">
-                        <div class="col-md-12">
-                            <div id="serviceCarousel" class="carousel slide" data-ride="carousel">
-        
-                                <ol class="carousel-indicators services-button">
-                                    <li data-target="#serviceCarousel" data-slide-to="0" class="active"></li>
-                                    <li data-target="#serviceCarousel" data-slide-to="1"></li>
-                                </ol>
-        
-                                <!-- Carousel items -->
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <div class="row">
-                                            <div class="col-md-4 service-box" id="services-carousel">
-                                                <a href="software-soluction.html">
-                                                <i class="fas fa-comments-dollar"></i>
-                                                <h4>Solução em Software para captação de doações</h4>
-                                                </a>
-                                            </div>
-                                            <div class="col-md-4 service-box" id="services-carousel">
-                                                <a href="callcenter.html">
-                                                <i class="fas fa-headset"></i>
-                                                <h4>Solução em Software para Call Center Ativo e Receptivo</h4>
-                                                </a>
-                                            </div>
-                                            <div class="col-md-4 service-box" id="services-carousel">
-                                                <a href="pabx.html">
-                                                <i class="fas fa-phone-volume"></i>
-                                                <h4>Operador e PABX Virtual</h4>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <!--.row-->
-                                    </div>
-                                    <!--.item-->
-        
-                                    <div class="carousel-item">
-                                        <div class="row">
-                                            <div class="col-md-4 service-box" id="services-carousel">
-                                                <a href="homeOffice.html">
-                                                <i class="fas fa-laptop-house"></i>
-                                                <h4>Gestão em Home Office</h4>
-                                                </a>
-                                            </div>
-                                            <div class="col-md-4 service-box" id="services-carousel">
-                                                <a href="capDonations.html">
-                                                <i class="fas fa-hand-holding-usd"></i>
-                                                <h4>Terceirização da Captação de Doações</h4>
-                                                </a>
-                                            </div>
-                                            <div class="col-md-4 service-box" id="services-carousel">
-                                                <a href="supervision.html">
-                                                <i class="fas fa-users"></i>
-                                                <h4>Terceirização da Supervisão da Captação de doações</h4>
-                                                </a>
-                                            </div>
-                                        <!--.row-->
-                                        </div>
-                                    </div><!--.item-->
-        
                                 </div>
-                                <!--.carousel-inner-->
+                                <!--.Row-->
                             </div>
-                            <!--.Carousel-->
-        
+                            <!--.container-->
                         </div>
+                        <!--.row-->
                     </div>
-                </div>
-            </section>
-            <!--Fim da Seção-->
+                    <!--.container-->
+                </div><!--Fim das descrições-->
+                
+            </section><!--Fim da seção de Gestão de HomeOffice-->
+        </div> <!--Fim das descrições-->
+        <!--Direcionamento WhatsApp-->
+        <div class="col-12 inst-link">
+            <a href="https://api.whatsapp.com/send?phone=553130727419O&text=Ol%C3%A1%2C+quero+saber+mais+sobre+a+Gest%C3%A3o+em+Home+Office.
+            "><i class="fab fa-whatsapp whatsapp-btn">Agende uma demonstração!</i></a>
         </div>
-
+        <!-- Fim do direcionamento -->
         <!--Navegação para o top do site-->
         <div class="container-fluid">
             <div class="container">
@@ -295,59 +305,59 @@
                     <div class="col-md-12 service-navigation">
                         <a class="nav-item" id="service-nav"><i class="fas fa-angle-double-up"></i></a>
                     </div>
-                </div>
-            </div>
+                </div><!--.row-->
+            </div><!--.container-->
         </div>
         <!--Fim do contéudo-->
-
         <!--Rodapé do site-->
         <footer id="footer">
             <div class="footer-top">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-4 footer-info">
-                            <h3>S&J</h3>
-                            <h4>Gestão em Comunicação</h4>
-                            <p>Desde 1998 nascemos para ajudar você. Empresa mineira especializada em soluções para
-                                Call
-                                Center
-                                receptivo e ativo e com KNOW HOW em captação de doações para o terceiro setor.</p>
-                        </div>
-                        <div class="col-md-4 footer-links">
+                        <!-- Resumo da SJ -->
+                        <div class="col-md-4 col-12 footer-info">
+                            <h4>SJ - Gestão em Comunicação</h4>
+                            <p>Desde 1998 nascemos para ajudar você. Empresa mineira especializada em soluções para Call Center
+                            receptivo e ativo e com KNOW HOW em captação de doações para o terceiro setor.</p>
+                        </div><!-- Fim do resumo -->
+                        <!-- Links para as páginas -->
+                        <div class="col-md-4 col-12 footer-links">
                             <h4>Links</h4>
                             <ul>
-                                <li><a href="index.html" class="footer-item">A SJ</a></li>
+                                <li><a href="#mainSlider" class="footer-item">A SJ</a></li>
                                 <li><a href="institucional.html" class="footer-item">Institucional</a></li>
                                 <li><a href="services.html" class="footer-item">Serviços</a></li>
-                                <li><a href="clients.html" class="footer-item">Clientes</a></li>
                                 <li><a href="contact.html" class="footer-item">Contatos</a></li>
+                                <li><a href="blog.html" class="footer-item">Blog</a></li>
                             </ul>
                         </div>
-                        <div class="col-md-4 footer-contact">
+                        <!--Fim dos links das páginas-->
+                        <!-- Resumo de contatos -->
+                        <div class="col-md-4 col-12 footer-contact">
                             <h4>Contatos</h4>
                             <p>
-                                Rua Lamartine Babo,481<br>
-                                Londrina, Santa Luzia<br>
-                                <strong>Telefone:</strong> (31)3212-3598 / (31)3072-7419<br>
-                                <strong>Email:</strong> comunicação@sjmarketing.com.br<br>
-                            </p>
+                                Escritório em Santa Luzia e Itapecerica<br>
+                                <strong>Telefone:</strong> (31)3072-7419/ (31)3212-3598<br>
+                                <strong>Email:</strong> comercial@sjgestao.com.br<br>
+                                </p>
                             <div class="social-links">
-                                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-                                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.instagram.com/sjgestao" class="instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="https://api.whatsapp.com/send?phone=553130727419O&text=Ol%C3%A1%2C+quero+saber+mais+sobre+a+S%26J+e+seus+servi%C3%A7os%21" class="linkedin"><i class="fa fa-whatsapp"></i></a>
                             </div>
                         </div>
-                    </div>
+                        <!--Fim dos contatos-->
+                    <div>
+                <!--.row-->
                 </div>
+            <!--.container-->
             </div>
+            <!-- Seção de copyright-->
             <div class="container" id="copy-area">
                 <div class="copyright">
-                    <p><strong>S&J Gestão em Comunicação</strong> &copy; 2020</p>
+                <p><strong>SJ Gestão em Comunicação</strong> &copy; 2022</p>
                 </div>
             </div>
-        </footer><!-- Fim do rodapé -->
+        </footer><!-- End Footer -->
     </main>
 </body>
-
 </html>

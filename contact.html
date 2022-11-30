@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>SJ Gestão em Comunicação</title>
+    <title>Contatos</title>
     <link rel="sortcut icon" href="img/logo.ico" type="image/x-icon" />
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -23,6 +23,7 @@
     <script src="https://kit.fontawesome.com/fbcf13c442.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300&display=swap" rel="stylesheet">
     <!--Parallax-->
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 </head>
@@ -31,45 +32,72 @@
     <script src="js/scripts.js"></script>
     <!--Cabeçalho do site-->
     <header>
+    <div class="container" id="nav-container">
         <!-- Menu de navegação-->
-        <div class="container" id="nav-container">
-            <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-                <a href="#" class="navbar-brand">
-                    <img id="logo" src="img/logo.png" alt="SJ Gestão em Comunicação"> S&J Gestão em Comunicação
+            <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+                <a href="index.html" class="navbar-brand">
+                    <img id="logo" src="img/logo.png" alt="SJ Gestão em Comunicação">
+                    <p id="navbar-name">SJ Gestão em Comunicação</p>
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
-                    aria-controls="navbar-links" aria-expanded="false" aria-label="toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
-                    <div class="navbar-nav">
-                        <a href="index.html" class="nav-item nav-link" id="sj-menu">A SJ</a></u>
-                        <a href="institucional.html" class="nav-item nav-link" id="ist-menu">Institucional</a></u>
-                        <a href="services.html" class="nav-item nav-link" id="services-menu">Serviços</a></u>
-                        <a href="clients.html" class="nav-item nav-link" id="clients-menu">Clientes</a></u>
-                        <a href="contact.html" class="nav-item nav-link" id="contact-menu">Contatos</a></u>
+                <!-- Seção do menu -->
+                <div class="menu-section collapse navbar-collapse justify-content-end" id="menuRes">
+                    <div id="navbar-links">
+                        <div class="navbar-nav">
+                            <a href="index.html" class="nav-item nav-link">Inicio</a></u>
+                            <a href="institucional.html" class="nav-item nav-link">Institucional</a></u>
+                            <a href="services.html" id="service_resp" class="nav-item nav-link">Serviços</a></u>
+                            <!-- Menu de serviços -->
+                            <div class="btn-group dropleft">
+                                <a class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Serviços
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <p class="dropdown-title"> Divisão Tecnológica</p>
+                                    <a class="dropdown-item" href="stf.html"><i class="fas fa-circle-notch"></i>  Sistema de Telemarketing Filantrópico</a>
+                                    <a class="dropdown-item" href="sga.html"><i class="fas fa-circle-notch"></i>  Sistema de Gestão Assistencial</a>
+                                    <a class="dropdown-item" href="sac.html"><i class="fas fa-circle-notch"></i>  Sistema de Atendimento ao Cliente 2.0</a>
+                                    <a class="dropdown-item" href="pabx.html"><i class="fas fa-circle-notch"></i>  Operador e PABX Virtual</a>
+                                    <a class="dropdown-item" href="homeOffice.html"><i class="fas fa-circle-notch"></i>  Home Office</a>
+                                    <p class="dropdown-title"> Divisão de Captação</p>
+                                    <a class="dropdown-item" href="capDonations.html"><i class="fas fa-circle-notch"></i> Terceirização da Captação de Doações</a>
+                                    <a class="dropdown-item" href="supervision.html"><i class="fas fa-circle-notch"></i>  Coordenação do Setor de Captação</a>
+                                </div>
+                            </div> <!-- Fim do menu de serviços -->
+                            <a href="contact.html" id="contact_resp" class="nav-item nav-link">Contato</a></u>
+                        </div>
                     </div>
+                    <!-- Design do menu responsivo -->
+                    <div class="menu-toggle">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="tree"></div>
+                    </div>                
                 </div>
-            </nav>
+            </nav> 
+            <!-- Fim do Menu de navegação -->
         </div>
     </header>
     <!--Fim do menu-->
-
     <!--Corpo do Site-->
     <main>
-        <div class="container-fluid">
+        <div id="parallax_area" class="container-fluid">
             <!--Seção de introdução-->
             <div class="main-image" id="contacts-top">
                 <div id="contacts-section">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12 contacts-box" id="contacts-pattern-img">
+                                <!-- Apresentação -->
                                 <div class="contacts-content">
                                     <h4>Entre em contato conosco</h4>
-                                    <p>A S&J quer colaborar com o seu crescimento.</p> 
-                                    <p>Usaremos todos os nossos anos de experiência para alavancar as suas arrecadações.</p>
-                                    <p>Não fique de fora da inovação e das soluções mais atuais para a sua causa.</p>
+                                    <p>A SJ quer colaborar com o seu crescimento.</p> 
+                                    <p>Usaremos todos os nossos anos de experiência para alavancar o seus resultados.</p>
+                                    <p>Não fique de fora da inovação e das soluções mais atuais para o seu negócio.</p>
+                                    <a class="nav-item nav-link" id="icon-sga"><i
+                                        class="fas fa-angle-double-down"></i></a>
                                 </div>
                             </div>
                         </div><!--.row-->
@@ -77,32 +105,40 @@
                 </div>
             </div>
             <!--Fim da Seção-->
-            
+            <!--Direcionamento WhatsApp-->
+            <div id="contact_wa">
+                <div class="col-12 inst-link">
+                    <a href="https://api.whatsapp.com/send?phone=553130727419O&text=Ol%C3%A1%2C+quero+saber+mais+sobre+a+Coordena%C3%A7%C3%A3o+do+Setor+de+Capta%C3%A7%C3%A3o."><i class="fab fa-whatsapp whatsapp-btn">Deseja falar pelo WhastApp?</i></a>
+                </div>
+            </div>
             <!--Seção de contatos-->
             <div id="contact-area" class="contact section-bg">
                 <div class="container" data-aos="fade-up">
                     <!--Informações-->
                     <div class="row mt-5">
                         <div class="col-lg-4" data-aos="fade-right">
-                        <div class="info">
-                            <div class="address">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <h4>Registro:</h4>
-                            <p>Santa Luzia, Minas Gerais</p>
-                            <span>Equipe:</span>
-                            <p>100% Home Office</p>
+                            <div class="info">
+                                <!-- Endereço -->
+                                <div class="address">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <h4>Registro:</h4>
+                                    <p>Santa Luzia, Minas Gerais</p>
+                                    <span>Equipe:</span>
+                                    <p>100% Home Office</p>
+                                </div>
+                                <!-- e-mail -->
+                                <div class="email">
+                                    <i class="far fa-envelope"></i>
+                                    <h4>Email:</h4>
+                                    <p>comercial@sjgestao.com.br</p>
+                                </div>
+                                <!-- Telefones -->
+                                <div class="phone">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <h4>Telefones:</h4>
+                                    <p>(31)3072-7419/ (31)3212-3598</p>
+                                </div>
                             </div>
-                            <div class="email">
-                            <i class="far fa-envelope"></i>
-                            <h4>Email:</h4>
-                            <p>comunicacao@sjmarketing.com.br</p>
-                            </div>
-                            <div class="phone">
-                            <i class="fas fa-phone-alt"></i>
-                            <h4>Telefones:</h4>
-                            <p>(31)3212-3598 / (31)3072-7419</p>
-                            </div>
-                        </div>
                         </div>
                         <!--Formulário-->
                         <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left">
@@ -141,6 +177,7 @@
                 </div><!--.container-->
             </div><!--.Fim da area-->
 
+
         </div>
         <!--.Fim da Seção-->
 
@@ -149,49 +186,50 @@
             <div class="footer-top">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-4 footer-info">
-                            <h3>S&J</h3>
-                            <h4>Gestão em Comunicação</h4>
-                            <p>Desde 1998 nascemos para ajudar você. Empresa mineira especializada em soluções para
-                                Call
-                                Center
-                                receptivo e ativo e com KNOW HOW em captação de doações para o terceiro setor.</p>
-                        </div>
-                        <div class="col-md-4 footer-links">
+                        <!-- Resumo da SJ -->
+                        <div class="col-md-4 col-12 footer-info">
+                            <h4>SJ - Gestão em Comunicação</h4>
+                            <p>Desde 1998 nascemos para ajudar você. Empresa mineira especializada em soluções para Call Center
+                            receptivo e ativo e com KNOW HOW em captação de doações para o terceiro setor.</p>
+                        </div><!-- Fim do resumo -->
+                        <!-- Links para as páginas -->
+                        <div class="col-md-4 col-12 footer-links">
                             <h4>Links</h4>
                             <ul>
-                                <li><a href="index.html" class="footer-item">A SJ</a></li>
+                                <li><a href="#mainSlider" class="footer-item">A SJ</a></li>
                                 <li><a href="institucional.html" class="footer-item">Institucional</a></li>
                                 <li><a href="services.html" class="footer-item">Serviços</a></li>
-                                <li><a href="clients.html" class="footer-item">Clientes</a></li>
                                 <li><a href="contact.html" class="footer-item">Contatos</a></li>
+                                <li><a href="blog.html" class="footer-item">Blog</a></li>
                             </ul>
                         </div>
-                        <div class="col-md-4 footer-contact">
+                        <!--Fim dos links das páginas-->
+                        <!-- Resumo de contatos -->
+                        <div class="col-md-4 col-12 footer-contact">
                             <h4>Contatos</h4>
                             <p>
-                                Rua Lamartine Babo,481<br>
-                                Londrina, Santa Luzia<br>
-                                <strong>Telefone:</strong> (31)3212-3598 / (31)3072-7419<br>
-                                <strong>Email:</strong> comunicação@sjmarketing.com.br<br>
+                                Escritório em Santa Luzia e Itapecerica<br>
+                                <strong>Telefone:</strong> (31)3072-7419/ (31)3212-3598<br>
+                                <strong>Email:</strong> comercial@sjgestao.com.br<br>
                             </p>
-                            <div class="social-links">
-                                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-                                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/sjgestao" class="instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://api.whatsapp.com/send?phone=553130727419O&text=Ol%C3%A1%2C+quero+saber+mais+sobre+a+S%26J+e+seus+servi%C3%A7os%21" class="linkedin"><i class="fa fa-whatsapp"></i></a>
                         </div>
                     </div>
+                    <!--Fim dos contatos-->
                 </div>
+                <!--.row-->
             </div>
+            <!--.container-->
+            <!-- Seção de copyright-->
             <div class="container" id="copy-area">
-                <div class="copyright">
-                    <p><strong>S&J Gestão em Comunicação</strong> &copy; 2020</p>
-                </div>
+            <div class="copyright">
+                <p><strong>SJ Gestão em Comunicação</strong> &copy; 2022</p>
             </div>
-        </footer><!-- Fim do rodapé -->
+            </div>
+        </footer><!-- End Footer -->
     </main>
 </body>
-
 </html>

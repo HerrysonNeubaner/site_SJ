@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>STF START e PREMIUM</title>
+    <link rel="sortcut icon" href="img/logo.ico" type="image/x-icon" />
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--Scripts-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <!-- Fontes-->
+    <script src="https://kit.fontawesome.com/fbcf13c442.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300&display=swap" rel="stylesheet">
+    <!--Parallax-->
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+</head>
+
+<body>
+    <!-- Direcionamento dos scripsts -->
+    <script src="js/scripts.js"></script>
+    <script src="js/fixed.js"></script>
+    <script src="js/wa_btn.js"></script>
+    <!--Cabeçalho do site-->
+    <header>
+        <div class="container" id="nav-container">
+            <!-- Menu de navegação-->
+            <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+                <a href="index.html" class="navbar-brand">
+                    <img id="logo" src="img/logo.png" alt="SJ Gestão em Comunicação">
+                    <p id="navbar-name">SJ Gestão em Comunicação</p>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Seção do menu -->
+                <div class="menu-section collapse navbar-collapse justify-content-end" id="menuRes">
+                    <div id="navbar-links">
+                        <div class="navbar-nav">
+                            <a href="index.html" class="nav-item nav-link">Inicio</a></u>
+                            <a href="institucional.html" class="nav-item nav-link">Institucional</a></u>
+                            <a href="services.html" id="service_resp" class="nav-item nav-link">Serviços</a></u>
+                            <!-- Menu de serviços -->
+                            <div class="btn-group dropleft">
+                                <a class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Serviços
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <p class="dropdown-title"> Divisão Tecnológica</p>
+                                    <a class="dropdown-item" href="stf.html"><i class="fas fa-circle-notch"></i>  Sistema de Telemarketing Filantrópico</a>
+                                    <a class="dropdown-item" href="sga.html"><i class="fas fa-circle-notch"></i>  Sistema de Gestão Assistencial</a>
+                                    <a class="dropdown-item" href="sac.html"><i class="fas fa-circle-notch"></i>  Sistema de Atendimento ao Cliente 2.0</a>
+                                    <a class="dropdown-item" href="pabx.html"><i class="fas fa-circle-notch"></i>  Operador e PABX Virtual</a>
+                                    <a class="dropdown-item" href="homeOffice.html"><i class="fas fa-circle-notch"></i>  Home Office</a>
+                                    <p class="dropdown-title"> Divisão de Captação</p>
+                                    <a class="dropdown-item" href="capDonations.html"><i class="fas fa-circle-notch"></i> Terceirização da Captação de Doações</a>
+                                    <a class="dropdown-item" href="supervision.html"><i class="fas fa-circle-notch"></i>  Coordenação do Setor de Captação</a>
+                                </div>
+                            </div> <!-- Fim do menu de serviços -->
+                            <a href="contact.html" id="contact_resp" class="nav-item nav-link">Contato</a></u>
+                        </div>
+                    </div>
+                    <!-- Design do menu responsivo -->
+                    <div class="menu-toggle">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="tree"></div>
+                    </div>                
+                </div>
+            </nav> 
+            <!-- Fim do Menu de navegação -->
+        </div>
+    </header>
+    <!--Fim do menu-->
+    <!--Corpo do Site-->
+    <main>
+        <!--Seção de introdução-->
+        <div id="parallax_area" class="container-fluid">
+            <div class="main-image" id="software-top">
+                <div id="software-section">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 modules-box" id="modules-pattern-img">
+                                <div class="modules-content">
+                                    <h4>Conheça o STF</h4>
+                                    <p>O Sistema STF (Sistema de Telemarketing Filantrópico) foi elaborado
+                                        especificamente para administrar dados de captação de doações através de
+                                        telemarketing, para o terceiro setor.</p>
+                                    <a class="nav-item nav-link" id="icon-services"><i
+                                            class="fas fa-angle-double-down"></i></a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--.row-->
+                    </div>
+                    <!--.container-->
+                </div>
+            </div>
+            <!--Fim da Seção-->
+        </div><!--Fim da Seção-->
+        <!--Guia de páginas-->
+        <div id="guide">
+            <ul>
+                <li class="active"><a href="#">STF</a></li>
+                <li><a href="services.html#tec_service_area">Divisão Tecnológica</a></li>
+                <li><a href="services.html#services-area"><i class="fa fa-home"></i>Serviços</a></li>
+            </ul>
+        </div> <!--Fim da guia de serviços-->
+        <!-- Botão Whatsapp -->
+        <div id="wa_btn">
+            <a  class="whatsapp-link" href="https://api.whatsapp.com/send?phone=553130727419O&text=Ol%C3%A1%2C+quero+saber+mais+sobre+o+STF." target="_blank">
+                <i class="fa fa-whatsapp"></i>
+            </a>
+        </div>
+        <!--Seção descritiva dos serviço - STF-->
+        <div class="container-fluid stf_modules_container" id="fix-guide">
+            <div class="stf_modules_intro" id="basic-description">
+                <p>Clique para ver os recursos de cada módulo:</p>
+            </div>
+            <div id="seletor_stf" >
+                <!-- Botão do STF START -->
+                <div class="btn_modules_stf" id="wa_btn_start"> 
+                    <button id="seletor_stf_start" class="btn-link btn_stf" type="button" data-toggle="collapse" data-target="#stf-basico" role="button" aria-expanded="false" aria-controls="stf-basico">
+                        STF START
+                    </button>
+                    <!-- Botão do STF Premium -->
+                    <button id="seletor_stf_premium" class="btn-link btn_stf" type="button" data-toggle="collapse" data-target="#stf-premium" role="button" aria-expanded="false" aria-controls="stf-premium">
+                        STF PREMIUM
+                    </button>
+                </div>
+                <!-- Colapso STF START -->
+                <div class="collapse" id="stf-basico" data-parent="#seletor_stf">
+                    <div class="card card-body">
+                        <!-- Início da seção - STF START -->
+                        <section>
+                            <!--Seção STF Básico-->
+                            <div class="stf-basico">
+                                <div class="container">
+                                    <div class="row">
+                                        <div id="basic-description" class="com-md-12">
+                                            <h2 class="module-stf">STF START</h2>
+                                            <p>Esse modulo do Software STF START atua no gerenciamento de doações via telemarketing,
+                                                possibilitando total controle, agilidade e segurança de toda logística da captação
+                                                das doações e seu recebimento.</p>
+                                        </div>
+                                    </div>
+                                    <!--.row-->
+                                </div>
+                                <!--.container-->
+                            </div>
+                            <!--Fim da Seção-->
+                            <!--Descrição do serviço-->
+                            <div id="basic-area">
+                                <div class="container">
+                                    <div class="row">
+                                        <!--Benefícios do serviço-->
+                                        <div class="col-md-12" id="basic-description">
+                                            <h2 class="modules-title">Principais Benefícios</h2>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 col-12 business-content">
+                                            <ul id="basic-description">
+                                                <li class="stf-basic-list"><i class="fas fa-check"></i>Baixo custo em hardware e
+                                                    locação</li>
+                                                <li class="stf-basic-list"><i class="fas fa-check"></i>Rápida e fácil implantação
+                                                </li>
+                                                <li class="stf-basic-list"><i class="fas fa-check"></i>Fácil operacionalização –
+                                                    (tutoriais nos campos para tirar dúvidas)</li>
+                                                <li class="stf-basic-list"><i class="fas fa-check"></i>Autonomia nas configurações
+                                                </li>
+                                                <li class="stf-basic-list"><i class="fas fa-check"></i>Permissões de acesso por
+                                                    usuário</li>
+                                                <li class="stf-basic-list"><i class="fas fa-check"></i>Redução de custo com mão de
+                                                    obra</li>
+                                                <li class="stf-basic-list"><i class="fas fa-check"></i>Número de licenças ilimitado
+                                                </li>
+                                                <li class="stf-basic-list"><i class="fas fa-check"></i>Segurança</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6 stf_start_img">
+                                            <img class="stf-img" src="img/office.png" alt="STF">
+                                        </div>
+                                        <!--Fim da Seção-->
+                                        <!--Detalhes do serviço-->
+                                        <div class="col-md-12 stf-detail">
+                                            <ul id="basic-description">
+                                                <h2 class="modules-title">Alguns detalhamentos dos recursos</h2>
+                                                <li class="stf-basic-list"><i class="fas fa-check"></i>Controle do fluxo de
+                                                    recebimento:</li>
+                                            </ul>
+                                            <ul id="management-description">
+                                                <li class="management-list"><i class="fas fa-circle-notch"></i>Gestão de baixa de
+                                                    recibos via mensageiro com controle para evitar fraudes</li>
+                                                <li class="management-list"><i class="fas fa-circle-notch"></i>Gestão automatizada
+                                                    de envio e baixa de arquivo COBA93 (CEMIG)</li>
+                                                <li class="management-list"><i class="fas fa-circle-notch"></i>Gestão automatizada
+                                                    parcial dos arquivos Energisa (Força e Luz) e SAAE</li>
+                                                <li class="management-list"><i class="fas fa-circle-notch"></i>Gestão de inclusão e
+                                                    baixa dos arquivos da COPASA</li>
+                                                <li class="management-list"><i class="fas fa-circle-notch"></i>Gestão automatizada
+                                                    de inclusão e baixa de boletos</li>
+                                            </ul>
+                                            <ul id="basic-description">
+                                                <li class="stf-basic-list"><i class="fas fa-check"></i>Agendamento automático de
+                                                    retorno de ligações: de acordo com parâmetrosestabelecidos pela entidade ou em
+                                                    acordo com o doador</li>
+                                                <li class="stf-basic-list"><i class="fas fa-check"></i>Distribuição de tarefas
+                                                    (operadores/mensageiro)</li>
+                                                <li class="stf-basic-list"><i class="fas fa-check"></i>Controle de produção
+                                                    (operador/mensageiro)</li>
+                                                <li class="stf-basic-list"><i class="fas fa-check"></i>Controle detalhado do
+                                                    recebimento das doações</li>
+                                                <li class="stf-basic-list"><i class="fas fa-check"></i>Amplas possibilidades de
+                                                    relatórios gerenciais</li>
+                                                <li class="stf-basic-list"><i class="fas fa-check"></i>Discagem das ligações manuais
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--Fim da Seção-->
+                                    </div>
+                                    <!--.row-->
+                                </div>
+                                <!--.container-->
+                            </div>
+                            <!--Fim da Seção-->
+                        </section>
+                        <!-- Fim da seção - STF START -->
+                    </div>
+                </div> 
+                <!-- Colapso STF PREMIUM -->
+                <div class="collapse" id="stf-premium" data-parent="#seletor_stf">
+                    <div class="card card-body">
+                        <!-- Início da seção - STF PREMIUM -->
+                        <section>
+                            <!--Descrição STF Premium-->
+                            <div class="container stf-premium-area">
+                                <div class="row">
+                                    <div id="basic-description" class="com-md-12">
+                                        <h2 class="module-stf">STF Premium</h2>
+                                        <p>O STF PREMIUM consistem na integração do sistema STF START, mais a articulação de uma plataforma integrada com PABX IP.</p>
+                                        <ul id="basic-description">
+                                            <li class="stf-basic-list"><i class="fas fa-check"></i>Esse é um produto que oferece a possibilidade de <b>redução da sua mão de obra operacional em até 30%.</b></li>
+                                            <li class="stf-basic-list"><i class="fas fa-check"></i>Possui o  controle total das ligações e mensagem de voz, por dispositivo de disparo de<b>ligações automáticas.</b></li>
+                                            <li class="stf-basic-list"><i class="fas fa-check"></i>Grava todas as ligações realizadas e armazena no  STF, dentro dos cadastros. <b>Eliminando assim mais um custo com outro sistema de gravações.</b></li>
+                                            <li class="stf-basic-list"><i class="fas fa-check"></i>O módulo Premium está completamente alinhado com todas as diretrizes <b>da Lei LGPD.</b></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Fim da descrição-->
+                            <!--Descrição dos serviços-->
+                            <div class="container" id="stf-inter-description">
+                                <div class="row">
+                                    <!--STF Premium - Descrição-->
+                                    <div class="col-md-12 stf-detail">
+                                        <!--Discador Automático-->
+                                        <div class="modules-description">
+                                            <h2 class="modules-title">Principais Ferramentas</h2>
+                                            <h3 class="modules-subtitle">Discador Automático</h3>
+                                            <p>O Discador é um algoritmo de discador automático de chamadas que analisa e identifica
+                                                quais agentes estão disponíveis para atendimento, seleciona um ou mais contatos com
+                                                base nas regras de negócios pré-estabelecidas na campanha e então inicia o processo
+                                                de discagem automática.</p>
+                                        </div>
+                                        <!-- Beneficios -->
+                                        <ul id="basic-description">
+                                            <h4>Benefícios</h4>
+                                            <li class="stf-basic-list"><i class="fas fa-check"></i>Total controle das ligações, o
+                                                Sistema STF PREMIUM administrará as ligações efetivando só as ligações
+                                                escolhidas pelo supervisor e entregando para o atendente somente ligações atendidas.
+                                            Trazendo maior efetividade em cada contato selecionado.</li>
+                                            <li class="stf-basic-list"><i class="fas fa-check"></i>Maior produtividade do
+                                                operador/atendente de telemarketing. Evitando desperdício de tempo, pois ao receber somente as ligações atendidas,
+                                                além da diminuição do cansaço/estresse do operador, também diminuirá o tempo com tentativas de ligaçõs.</li>
+                                            <li class="stf-basic-list"><i class="fas fa-check"></i>Configurações de tempo de
+                                                discagem entre as ligações, ajustando cada material preparado de acordo com a eficiência de cada operador.</li>
+                                            <li class="stf-basic-list"><i class="fas fa-check"></i>Redução de custo com telefonia.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!--Fim da explicação do Discador Automático-->
+                                    <!--Click-to-call-->
+                                    <div class="container click-to-call">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <!-- Descrição -->
+                                                <div class="modules-description">
+                                                    <h3 class="modules-subtitle">Discador Manual - Clik-To-Call</h3>
+                                                    <p>É uma ferramenta de discagem, que assim como no discador automático, esta
+                                                        inserida dentro do próprio STF PREMIUM, entretanto neste método é o
+                                                        operador que controla o ritmo das ligações, dentro do cadastro do
+                                                        contribuinte o operador encontrará um botão que efetuará a ligação bastando
+                                                        apenas um clique.</p>
+                                                </div>
+                                            </div>
+                                            <!-- Benefícios -->
+                                            <div class="col-md-6">
+                                                <ul id="basic-description">
+                                                    <h4>Benefícios</h4>
+                                                    <li class="stf-basic-list"><i class="fas fa-check"></i>Evita o LER (lesão por
+                                                        esforço repetitivo), dispensa o uso do headset, na versão STF BÁSICO a
+                                                        operadora disca cada número no headset, com a ferramenta CLICK-TO-CALL o
+                                                        computador que discará, apenas acionando um botão.</li>
+                                                    <li class="stf-basic-list"><i class="fas fa-check"></i>Proporciona uma agilidade
+                                                        nas discagens das ligações;</li>
+                                                    <li class="stf-basic-list"><i class="fas fa-check"></i>Trará economia com a
+                                                        aquisição e ou manutenção do aparelho Headsets, que não serão mais
+                                                        necessários.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <img class="stf-img" src="img/op.png" alt="Discador Automático">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Fim da explicação do Click to Call-->
+                                    <!--Gravador de chamadas-->
+                                    <div class="container record-call">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <!-- Descrição -->
+                                                <div class="modules-description">
+                                                    <h3 class="modules-subtitle">Gravador de chamadas</h3>
+                                                    <p>É uma das ferramentas mais importantes para o telemarketing, oferece recursos
+                                                        fundamentais de controle de qualidade e armazenamento das ligações.</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5 record_call_img">
+                                                <img class="stf-img" src="img/recordcall.png" alt="Gravador de chamadas">
+                                            </div>
+                                            <!-- Benefícios -->
+                                            <div class="col-md-7">
+                                                <ul id="basic-description">
+                                                    <h4>Benefícios</h4>
+                                                    <li class="stf-basic-list"><i class="fas fa-check"></i>Monitora o atendimento
+                                                        dos atendentes em tempo real ou posterior (é possível entrar na ligação
+                                                        enquanto ela está sendo executada, para uma intervenção ou após a ligação
+                                                        finalizada, para treinamento, e outros).</li>
+                                                    <li class="stf-basic-list"><i class="fas fa-check"></i>Facilita a localização da
+                                                        gravação (Todas as ligações feitas para o doador ficará armazenadas dentro
+                                                        do STF PLUS, individualmente no campo do cadastro do contribuinte e em outra
+                                                        janela de pesquisa com uma variedade de opções para localizar as ligações).
+                                                    </li>
+                                                    <li class="stf-basic-list"><i class="fas fa-check"></i>Fornece vários relatórios
+                                                        estatísticos de controles de ligações (Também é possível obter diversos
+                                                        indicadores de qualidade e dados para posteriores estratégias. As gravações
+                                                        serão ouvidas diretamente no STF PREMIUM, ou ao efetuar o download).
+                                                    </li>
+                                                    <li class="stf-basic-list"><i class="fas fa-check"></i>Oferece segurança total,
+                                                        todas as chamadas recebidas ou realizadas são 100% gravadas, o arquivo de
+                                                        gravação pode ser acessado logo após o encerramento da chamada (fator
+                                                        fundamental, pois as autorizações de debito automático gravadas, são
+                                                        assinaturas).</li>
+                                                    <li class="stf-basic-list"><i class="fas fa-check"></i>Facilidade em definições
+                                                        de permissões para gravar (Podem ser gravados todos os ramais ou só os
+                                                        escolhidos, guardando assim algum ramal que precise de sigilo).</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Fim da explicação do Gravador de Chamadas-->
+                                    <!--Home Office-->
+                                    <div class="container click-to-call">
+                                        <div class="row">
+                                            <!--Descrição do Home Office-->
+                                            <div class="col-md-12">
+                                                <div class="modules-description">
+                                                    <h3 class="modules-subtitle">Home Office</h3>
+                                                    <p>Com o STF PREMIUM você pode adotar todas as vantagens do modelo HOME OFFICE.
+                                                        Todos os usuários
+                                                        poderão trabalhar
+                                                        remotamente de suas casas, mantendo a mesma dinâmica de serviço que seria
+                                                        adotada localmente.</p>
+                                                </div>
+                                            </div>
+                                            <!--.Descriçao dos serviços oferecidos-->
+                                            <div class="col-md-12 business-content">
+                                                <ul id="basic-description">
+                                                    <li class="stf-basic-list"><i class="fas fa-check"></i><b>Oferecemos hospedagem
+                                                            e tecnologia de
+                                                            virtualização:</b> para que seja possível ter uma rede de trabalho no
+                                                        sistema home office, que
+                                                        compreende:</li>
+                                                </ul>
+                                                <ul id="management-description">
+                                                    <li class="management-list"><i class="fas fa-circle-notch"></i>Sistema de alta
+                                                        disponibilidade.</li>
+                                                    <li class="management-list"><i class="fas fa-circle-notch"></i>Sistemas
+                                                        interligados, com softwares que
+                                                        se
+                                                        comunicam entre sí.</li>
+                                                    <li class="management-list"><i class="fas fa-circle-notch"></i>Recursos de PABX
+                                                        IP.</li>
+                                                </ul>
+                                                <ul id="basic-description">
+                                                    <li class="stf-basic-list"><i class="fas fa-check"></i><b>Oferecemos Gestão de
+                                                            banco de dados:</b> que
+                                                        compreende no backup de todo sistema e registro de gravações, com total
+                                                        segurança.</li>
+                                                </ul>
+                                                <ul id="basic-description">
+                                                    <li class="stf-basic-list"><i class="fas fa-check"></i>Oferecemos tecnologia em
+                                                        software para supervisão
+                                                        do
+                                                        serviço online/remota, como:</li>
+                                                </ul>
+                                                <ul id="management-description">
+                                                    <li class="management-list"><i class="fas fa-circle-notch"></i>Painel de
+                                                        controle e visualização da
+                                                        telefonia
+                                                        IP.</li>
+                                                    <li class="management-list"><i class="fas fa-circle-notch"></i>Dispositivo de
+                                                        controle para
+                                                        acompanhamento das
+                                                        atividades operacionais, como o inicio e término da carga horária de
+                                                        trabalho. É possível saber
+                                                        também se as
+                                                        pausa e normas da NR 17 estão sendo respeitadas.</li>
+                                                    <li class="management-list"><i class="fas fa-circle-notch"></i>Controle de
+                                                        acesso no trabalho, o qual
+                                                        pode ser
+                                                        limitado dentro do horário pré determinado, para que não trabalhem em
+                                                        horário não autorizados.</li>
+                                                    <li class="management-list"><i class="fas fa-circle-notch"></i>Plataforma de
+                                                        chamados e comunicação para
+                                                        contatos entre funcionários e supervisão.</li>
+                                                </ul>
+                                            </div>
+                                            <!--Repartição com imagem ilustrativa-->
+                                            <div class="container grafic-home">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <ul id="basic-description">
+                                                            <li class="stf-basic-list"><i class="fas fa-check"></i><b>Oferecemos
+                                                                    orientações sobre o home
+                                                                    office:</b> no que tange o acompanhamento e adaptação do sistema
+                                                                junto aos operadores e
+                                                                supervisor. Nessas orientações oferecemos apoio também para se
+                                                                proceder no âmbito
+                                                                trabalhista do
+                                                                novo sistema.</li>
+                                                        </ul>
+                                                        <ul id="basic-description">
+                                                            <li class="stf-basic-list"><i class="fas fa-check"></i><b>Suporte
+                                                                    técnico,</b> que compreende a
+                                                                operacionalização de todos os computadores que estão em atividade
+                                                                neste modelo. Assegurando
+                                                                a
+                                                                eficiência de cada ponto, solucionando problemas que possam vir a
+                                                                impedirem a execução do
+                                                                sistema e
+                                                                das tarefas. </li>
+                                                        </ul>
+                                                    </div>
+                                                    <!--.Imagem Ilustrativa do Home Office-->
+                                                    <div class="col-md-6 homeOffice2-img">
+                                                        <img class="stf-img" src="img/homeoffice2.png" alt="Home Office">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Fim da explicação do Home Office-->
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.Fim da descrição de Serviços - STF PREMIUM-->
+                        </section>
+                        <!-- Fim da seção - STF PREMIUM -->
+                    </div>
+                </div>
+                <!-- Fim do colapso - STF PREMIUM -->
+            </div>
+        </div>
+        <!--Fim da Seção descritiva dos serviço - STF-->
+        <!--Direcionamento WhatsApp-->
+        <div id="wa_btn_end" class="col-12 inst-link">
+            <a href="https://api.whatsapp.com/send?phone=553130727419O&text=Ol%C3%A1%2C+quero+saber+mais+sobre+o+STF."><i class="fab fa-whatsapp whatsapp-btn">Agende uma demonstração!</i></a>
+        </div>
+        <!-- Fim do direcionamentro WhatsApp -->
+        <!--Navegação para o top do site-->
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 service-navigation">
+                        <a class="nav-item" id="service-nav"><i class="fas fa-angle-double-up"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Fim da navegação ao topo-->
+        <!--Rodapé do site-->
+        <footer id="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <!-- Resumo da SJ -->
+                        <div class="col-md-4 col-12 footer-info">
+                            <h4>SJ - Gestão em Comunicação</h4>
+                            <p>Desde 1998 nascemos para ajudar você. Empresa mineira especializada em soluções para Call Center
+                            receptivo e ativo e com KNOW HOW em captação de doações para o terceiro setor.</p>
+                        </div><!-- Fim do resumo -->
+                        <!-- Links para as páginas -->
+                        <div class="col-md-4 col-12 footer-links">
+                            <h4>Links</h4>
+                            <ul>
+                                <li><a href="#mainSlider" class="footer-item">A SJ</a></li>
+                                <li><a href="institucional.html" class="footer-item">Institucional</a></li>
+                                <li><a href="services.html" class="footer-item">Serviços</a></li>
+                                <li><a href="contact.html" class="footer-item">Contatos</a></li>
+                                <li><a href="blog.html" class="footer-item">Blog</a></li>
+                            </ul>
+                        </div>
+                        <!--Fim dos links das páginas-->
+                        <!-- Resumo de contatos -->
+                        <div class="col-md-4 col-12 footer-contact">
+                            <h4>Contatos</h4>
+                            <p>
+                                Escritório em Santa Luzia e Itapecerica<br>
+                                <strong>Telefone:</strong> (31)3072-7419/ (31)3212-3598<br>
+                                <strong>Email:</strong> comercial@sjgestao.com.br<br>
+                            </p>
+                            <div class="social-links">
+                                <a href="https://www.instagram.com/sjgestao" class="instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="https://api.whatsapp.com/send?phone=553130727419O&text=Ol%C3%A1%2C+quero+saber+mais+sobre+a+S%26J+e+seus+servi%C3%A7os%21" class="linkedin"><i class="fa fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                        <!--Fim dos contatos-->
+                    <div>
+                <!--.row-->
+                </div>
+            <!--.container-->
+            </div>
+            <!-- Seção de copyright-->
+            <div class="container" id="copy-area">
+                <div class="copyright">
+                <p><strong>SJ Gestão em Comunicação</strong> &copy; 2022</p>
+                </div>
+            </div>
+        </footer><!-- End Footer -->
+    </main>
+</body>
+</html>
